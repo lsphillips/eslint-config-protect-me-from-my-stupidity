@@ -42,14 +42,6 @@ This project currently includes configuration for the following plugins:
 - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
 - [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise)
 
-## Development
-
-This project doesn't have much of a build process. It does have a couple of tests though; which you can run like so:
-
-``` sh
-npm test
-```
-
 ## Disclaimer
 
 If you get offended by my use of the word **stupid**. It is just a joke.
