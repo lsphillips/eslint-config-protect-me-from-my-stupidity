@@ -41,6 +41,36 @@ This project currently includes configuration for the following plugins:
 - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
 - [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise)
 
+## Semantic versioning policy
+
+This project follows a semantic versioning policy that aims not to surprise you:
+
+### Patch release
+
+- Updating an existing rule that will result in ESLint reporting fewer errors.
+
+### Minor release
+
+- Updating an existing rule that will result in ESLint reporting more errors.
+- Adding a new rule.
+- Updating an existing plugin to a new major or minor version.
+
+### Major release
+
+- Removing support for an old version of ESLint.
+- Adding a new plugin.
+- Removing an existing plugin.
+
+**Note:** It is advised that you only take patch versions using [tilde ranges](https://docs.npmjs.com/misc/semver#tilde-ranges-123-12-1).
+
+## Getting started
+
+It's available through the Node Package Manager (NPM), so you can install it like so:
+
+``` sh
+npm install eslint-config-protect-me-from-my-stupidity
+```
+
 ## Disclaimer
 
-If you get offended by my use of the word **stupid**. It is just a joke.
+Finally, if you get offended by my use of the word **stupid**. It is just a joke.
