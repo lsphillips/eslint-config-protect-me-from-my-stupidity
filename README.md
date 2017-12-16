@@ -65,7 +65,7 @@ This project follows a semantic versioning policy that aims not to surprise you:
 
 ## Getting started
 
-It's available through the Node Package Manager (NPM), so you can install it like so:
+This project is available through the Node Package Manager (NPM), so you can install it like so:
 
 ``` sh
 npm install eslint-config-protect-me-from-my-stupidity
