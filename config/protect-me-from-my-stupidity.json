@@ -50,7 +50,7 @@
 		"no-unsafe-finally"                  : "error",
 		"no-unsafe-negation"                 : "error",
 		"use-isnan"                          : "error",
-		"valid-jsdoc"                        : "warn",
+		"valid-jsdoc"                        : ["warn", { "requireReturn" : false }],
 		"valid-typeof"                       : "error",
 		"accessor-pairs"                     : "warn",
 		"array-callback-return"              : "error",
@@ -86,7 +86,7 @@
 		"no-labels"                          : "off",
 		"no-lone-blocks"                     : "error",
 		"no-loop-func"                       : "error",
-		"no-magic-numbers"                   : "warn",
+		"no-magic-numbers"                   : "off",
 		"no-multi-spaces"                    : "off",
 		"no-multi-str"                       : "error",
 		"no-new"                             : "error",
@@ -106,7 +106,7 @@
 		"no-sequences"                       : "error",
 		"no-throw-literal"                   : "error",
 		"no-unmodified-loop-condition"       : "error",
-		"no-unused-expressions"              : "error",
+		"no-unused-expressions"              : "off",
 		"no-unused-labels"                   : "error",
 		"no-useless-call"                    : "error",
 		"no-useless-concat"                  : "error",
@@ -135,7 +135,7 @@
 		"no-unused-vars"                     : "error",
 		"no-use-before-define"               : "error",
 		"callback-return"                    : ["error", ["done", "callback", "next", "resolve", "reject"]],
-		"global-require"                     : "error",
+		"global-require"                     : "off",
 		"handle-callback-err"                : "error",
 		"no-buffer-constructor"              : "error",
 		"no-mixed-requires"                  : "error",
@@ -306,6 +306,6 @@
 		"promise/avoid-new"                  : "off",
 		"promise/no-return-in-finally"       : "error",
 		"promise/prefer-await-to-then"       : "error",
-		"promise/prefer-await-to-callbacks"  : "error"
+		"promise/prefer-await-to-callbacks"  : "off"
 	}
 }
