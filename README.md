@@ -41,6 +41,8 @@ This project currently includes configuration for the following plugins:
 - [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
 - [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise)
 
+**Note:** You will have to install the above plugins yourself as they are peer dependencies.
+
 ## Semantic versioning policy
 
 This project follows a semantic versioning policy that aims not to surprise you:
@@ -53,13 +55,12 @@ This project follows a semantic versioning policy that aims not to surprise you:
 
 - Updating an existing rule that will result in ESLint reporting more errors.
 - Adding a new rule.
-- Updating an existing plugin to a new major or minor version.
 
 ### Major release
 
 - Removing support for an old version of ESLint.
-- Adding a new plugin.
-- Removing an existing plugin.
+- Adding support for a new plugin.
+- Removing support for an old version of an existing plugin.
 
 **Note:** It is advised that you only take patch versions using [tilde ranges](https://docs.npmjs.com/misc/semver#tilde-ranges-123-12-1).
 
