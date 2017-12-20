@@ -14,11 +14,25 @@ Add this to your ESLint configuration.
 }
 ```
 
-However, if you don't care for code style rules, you can add this to your ESLint configuration instead:
+However, if you don't care for code style rules, you can add this to your ESLint configuration:
 
 ``` json
 {
-	"extends" : "protect-me-from-my-stupidity/but-let-me-look-stupid"
+	"extends" : [
+		"protect-me-from-my-stupidity",
+		"protect-me-from-my-stupidity/but-let-my-code-look-stupid"
+	]
+}
+```
+
+Finally, when you are writing tests, you can loosen the rules by adding this to your ESLint configuration:
+
+``` json
+{
+	"extends" : [
+		"protect-me-from-my-stupidity",
+		"protect-me-from-my-stupidity/but-let-me-write-stupid-tests"
+	]
 }
 ```
 
@@ -43,7 +57,7 @@ This project currently includes configuration for the following plugins:
 
 **Note:** You will have to install the above plugins yourself as they are peer dependencies.
 
-## Semantic versioning policy
+## Semantic Versioning
 
 This project follows a semantic versioning policy that aims not to surprise you:
 

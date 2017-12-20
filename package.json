@@ -1,7 +1,7 @@
 {
 	"name" : "eslint-config-protect-me-from-my-stupidity",
 
-	"version" : "1.0.0",
+	"version" : "2.0.0",
 
 	"description" : "An opinionated ESLint configuration that shall protect you from your stupidity when writing JavaScript.",
 
@@ -32,7 +32,7 @@
 	{
 		"url" : "https://github.com/lsphillips/ProtectMeFromMyStupidity/issues"
 	},
-	
+
 	"main" : "protect-me-from-my-stupidity.js",
 
 	"peerDependencies" :

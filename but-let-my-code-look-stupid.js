@@ -1,6 +1,9 @@
-{
-	"extends" : "./config/protect-me-from-my-stupidity.json",
+'use strict';
 
+// --------------------------------------------------------
+
+module.exports =
+{
 	"rules" :
 	{
 		"array-bracket-newline"              : "off",
@@ -106,4 +109,4 @@
 		"import/no-named-default"            : "off",
 		"import/no-anonymous-default-export" : "off"
 	}
-}
+};
