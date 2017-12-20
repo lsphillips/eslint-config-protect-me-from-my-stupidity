@@ -25,6 +25,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 	The same applies to the `protect-me-from-my-stupidity/but-let-me-write-stupid-tests` configuration.
 
+### Fixed
+
+- JSX is now enabled in the parser options.
+
 ## [1.0.0] (2017-12-17)
 
 The initial public release.

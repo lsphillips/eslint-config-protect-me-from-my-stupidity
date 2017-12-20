@@ -8,7 +8,7 @@ module.exports =
 	{
 		"ecmaVersion" : 8,
 
-		"parseOptions" :
+		"ecmaFeatures" :
 		{
 			"jsx" : true
 		},
