@@ -11,7 +11,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Changed
 
 - `protect-me-from-my-stupidity/but-let-me-look-stupid` has been renamed to `protect-me-from-my-stupidity/but-let-my-code-look-stupid`.
-- The `max-depth` and `max-nested-callbacks` rule has been lowered to **3**.
+- The `max-depth` and `max-nested-callbacks` rules have both been lowered to **3**.
 - `protect-me-from-my-stupidity/but-let-my-code-look-stupid` to longer inherits from `protect-me-from-my-stupidity`. You will now have to extend both:
 
 	```json
