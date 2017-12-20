@@ -75,6 +75,7 @@ This project follows a semantic versioning policy that aims not to surprise you:
 - Removing support for an old version of ESLint.
 - Adding support for a new plugin.
 - Removing support for an old version of an existing plugin.
+- Adding a new configuration.
 
 **Note:** It is advised that you only take patch versions using [tilde ranges](https://docs.npmjs.com/misc/semver#tilde-ranges-123-12-1).
 
