@@ -171,7 +171,7 @@ module.exports =
 		"id-blacklist"                       : "off",
 		"id-length"                          : "off",
 		"id-match"                           : "off",
-		"implicit-arrow-linebreak"           : "error",
+		"implicit-arrow-linebreak"           : "off",
 		"indent"                             : ["error", "tab"],
 		"jsx-quotes"                         : "error",
 		"key-spacing"                        : ["error", { "beforeColon" : true, "afterColon" : true, "mode" : "minimum" }],
