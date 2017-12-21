@@ -198,7 +198,7 @@ module.exports =
 		"no-inline-comments"                 : "off",
 		"no-lonely-if"                       : "error",
 		"no-mixed-operators"                 : "error",
-		"no-mixed-spaces-and-tabs"           : "error",
+		"no-mixed-spaces-and-tabs"           : ["error", "smart-tabs"],
 		"no-multi-assign"                    : "off",
 		"no-multiple-empty-lines"            : ["error", { "max" : 1 }],
 		"no-negated-condition"               : "error",

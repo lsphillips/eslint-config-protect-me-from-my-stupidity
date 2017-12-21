@@ -4,6 +4,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ## [Unreleased]
 
+### Changed
+
+- Configured the `no-mixed-spaces-and-tabs` rule to allow for `smart-tabs`.
+
 ### Fixed
 
 - Switched the `implicit-arrow-linebreak` rule off as it clashed with the `brace-style` rule.
