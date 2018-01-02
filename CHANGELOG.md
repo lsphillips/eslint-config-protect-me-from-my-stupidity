@@ -7,6 +7,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Changed
 
 - Updated the `array-element-newline` rule to not apply to arrays with less than 5 elements.
+- Switched the `no-invalid-this` rule off in the `protect-me-from-my-stupidity/but-let-me-write-stupid-tests` configuration.
 
 ## [2.0.1] (2017-12-27)
 
