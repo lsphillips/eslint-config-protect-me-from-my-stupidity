@@ -2,6 +2,14 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [Unreleased]
+
+### Changed
+
+- Updated the `no-use-before-define` rule to allow functions to be used before they are defined.
+- Switched the `prefer-template` rule off.
+- Updated the `max-len` rule to allow lines to go up to 120 characters in length.
+
 ## [2.0.2] (2018-01-02)
 
 ### Changed
