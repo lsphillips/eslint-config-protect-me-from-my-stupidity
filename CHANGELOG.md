@@ -2,6 +2,13 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [2.0.4] (2018-02-03)
+
+### Changed
+
+- Updated the `operator-linebreak` rule to allow line breaks before the operator.
+- Updated the `func-name-matching` rule to ignore `module.exports`.
+
 ## [2.0.3] (2018-01-04)
 
 ### Changed
