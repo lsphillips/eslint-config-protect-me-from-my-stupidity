@@ -219,7 +219,7 @@ module.exports =
 		"one-var"                            : "off",
 		"one-var-declaration-per-line"       : "off",
 		"operator-assignment"                : "error",
-		"operator-linebreak"                 : ["error", "before"],
+		"operator-linebreak"                 : "off",
 		"padding-blocks"                     : "off",
 		"padding-line-between-statements"    : "off",
 		"quote-props"                        : ["error", "as-needed"],

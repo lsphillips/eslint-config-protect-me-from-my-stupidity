@@ -2,6 +2,12 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [2.0.5] (2018-04-16)
+
+### Changed
+
+- Switched the `operator-linebreak` rule off.
+
 ## [2.0.4] (2018-02-03)
 
 ### Changed
