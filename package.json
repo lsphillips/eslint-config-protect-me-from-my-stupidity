@@ -15,9 +15,8 @@
 	[
 		"eslint",
 		"eslint-config",
-		"rules",
-		"stupid",
-		"style guide"
+		"style-guide",
+		"rules"
 	],
 
 	"repository" :
