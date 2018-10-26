@@ -1,7 +1,7 @@
 {
 	"name" : "eslint-config-protect-me-from-my-stupidity",
 
-	"version" : "2.1.1",
+	"version" : "3.0.0",
 
 	"description" : "An opinionated ESLint configuration that shall protect you from your stupidity when writing JavaScript.",
 
@@ -36,9 +36,9 @@
 
 	"peerDependencies" :
 	{
-		"eslint" : "^4.17.0",
-		"eslint-plugin-import" : "^2.8.0",
-		"eslint-plugin-promise" : "^3.6.0"
+		"eslint" : "^5.7.0",
+		"eslint-plugin-import" : "^2.14.0",
+		"eslint-plugin-promise" : "^4.0.0"
 	},
 
 	"license" : "UNLICENSED"

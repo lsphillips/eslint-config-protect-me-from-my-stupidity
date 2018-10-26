@@ -2,6 +2,38 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [3.0.0] (2018-10-26)
+
+### Added
+
+- Switched the new `no-misleading-character-class` rule on to prohibit regular expressions containing characters with multiple code points.
+- Switched the new `no-async-promise-executor` rule on to prohibit asynchronous executor functions.
+- Switched the new `require-atomic-updates` rule on to help protect from subtle race conditions involving generators and promises.
+- Switched the new `max-lines-per-function` and `require-unicode-regexp` rules off.
+- Switched the new `import/no-cycle` rule on to prohibit circular dependencies.
+- Switched the new `import/no-self-import` rule on to prohibit a module from importing itself.
+- Switched the new `import/no-useless-path-segments` rule on to enforce optimal module paths.
+- Switched the new `import/dynamic-import-chunkname`, `import/no-default-export`, `import/no-deprecated`, `import/no-named-export` and `import/no-relative-parent-imports` rules off.
+- Switched the new `promise/valid-params` rule on to enforce correct usage of all Promise methods.
+- Switched the new `promise/no-new-statics` rule on to prohibit the use of the `new` keyword with static Promise methods.
+
+### Changed
+
+- Updated the minimum required `eslint-plugin-import` version to `2.14.0`.
+- Updated the minimum required `eslint` version to `5.7.0`.
+- Updated the minimum required `eslint-plugin-promise` version to `4.0.0`.
+- Updated the `import/order` rule to enforce the following import order:
+  1. Builtin Node.js modules.
+  2. External modules.
+  3. Internal modules.
+  4. Modules from a parent directory.
+  5. Sibling modules.
+- Updated the ECMAScript version to `9` (2018).
+
+### Fixed
+
+- Global strict mode is now enabled in the parser options.
+
 ## [2.1.1] (2018-06-05)
 
 ### Changed

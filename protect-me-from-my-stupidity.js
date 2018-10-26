@@ -6,11 +6,12 @@ module.exports =
 {
 	"parserOptions" :
 	{
-		"ecmaVersion" : 8,
+		"ecmaVersion" : 9,
 
 		"ecmaFeatures" :
 		{
-			"jsx" : true
+			"jsx" : true,
+			"impliedStrict" : true
 		},
 
 		"sourceType" : "module"
@@ -186,6 +187,7 @@ module.exports =
 		"max-nested-callbacks"               : ["error", 3],
 		"max-params"                         : ["error", 4],
 		"max-statements"                     : "off",
+		"max-lines-per-function"             : "off",
 		"max-statements-per-line"            : "error",
 		"multiline-comment-style"            : "off",
 		"multiline-ternary"                  : "off",
@@ -269,7 +271,12 @@ module.exports =
 		"symbol-description"                 : "warn",
 		"template-curly-spacing"             : "off",
 		"yield-star-spacing"                 : ["error", "both"],
+		"require-unicode-regexp"             : "off",
+		"no-misleading-character-class"      : "error",
+		"no-async-promise-executor"          : "error",
+		"require-atomic-updates"             : "error",
 		"import/default"                     : "error",
+		"import/dynamic-import-chunkname"    : "off",
 		"import/export"                      : "error",
 		"import/exports-last"                : "off",
 		"import/extensions"                  : "off",
@@ -283,6 +290,9 @@ module.exports =
 		"import/no-amd"                      : "error",
 		"import/no-anonymous-default-export" : "error",
 		"import/no-commonjs"                 : "off",
+		"import/no-cycle"                    : ["error", { "commonjs" : true }],
+		"import/no-default-export"           : "off",
+		"import/no-deprecated"               : "off",
 		"import/no-duplicates"               : "error",
 		"import/no-dynamic-require"          : "error",
 		"import/no-extraneous-dependencies"  : "error",
@@ -291,13 +301,17 @@ module.exports =
 		"import/no-named-as-default-member"  : "error",
 		"import/no-named-as-default"         : "error",
 		"import/no-named-default"            : "error",
+		"import/no-named-export"             : "off",
 		"import/no-namespace"                : "off",
 		"import/no-nodejs-modules"           : "off",
+		"import/no-relative-parent-imports"  : "off",
 		"import/no-restricted-paths"         : "off",
+		"import/no-self-import"              : "error",
 		"import/no-unassigned-import"        : "error",
 		"import/no-unresolved"               : ["error", { "commonjs" : true }],
+		"import/no-useless-path-segments"    : "error",
 		"import/no-webpack-loader-syntax"    : "error",
-		"import/order"                       : "off",
+		"import/order"                       : ["error", { "groups" : ["builtin", "external", "internal", "parent", "sibling", "index"] }],
 		"import/prefer-default-export"       : "off",
 		"import/unambiguous"                 : "off",
 		"promise/catch-or-return"            : "error",
@@ -309,7 +323,9 @@ module.exports =
 		"promise/no-promise-in-callback"     : "off",
 		"promsie/no-callback-in-promise"     : "off",
 		"promise/avoid-new"                  : "off",
+		"promise/no-new-statics"             : "error",
 		"promise/no-return-in-finally"       : "error",
+		"promise/valid-params"               : "error",
 		"promise/prefer-await-to-then"       : "error",
 		"promise/prefer-await-to-callbacks"  : "off"
 	}

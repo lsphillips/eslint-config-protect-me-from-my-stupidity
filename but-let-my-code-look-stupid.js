@@ -42,6 +42,7 @@ module.exports =
 		"max-nested-callbacks"               : "off",
 		"max-params"                         : "off",
 		"max-statements"                     : "off",
+		"max-lines-per-function"             : "off",
 		"max-statements-per-line"            : "off",
 		"multiline-comment-style"            : "off",
 		"multiline-ternary"                  : "off",
@@ -107,6 +108,8 @@ module.exports =
 		"import/max-dependencies"            : "off",
 		"import/no-unassigned-import"        : "off",
 		"import/no-named-default"            : "off",
-		"import/no-anonymous-default-export" : "off"
+		"import/no-default-export"           : "off",
+		"import/no-anonymous-default-export" : "off",
+		"import/group-export"                : "off"
 	}
 };
