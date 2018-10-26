@@ -40,9 +40,10 @@ Finally, when you are writing tests, you can loosen the rules by adding this to 
 
 This project configures ESLint to parse JavaScript with the following in mind:
 
-- All features up to ECMAScript 2017 are enabled.
+- All features up to ECMAScript 2018 are enabled.
 - JSX is enabled.
 - Modules, as defined by ECMAScript 2015, are enabled.
+- Global strict mode is enabled.
 
 **Note:** This project makes no assumption about your JavaScript environment, you must configure that yourself. See https://eslint.org/docs/user-guide/configuring#specifying-environments.
 
