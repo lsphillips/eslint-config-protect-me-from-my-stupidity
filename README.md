@@ -10,7 +10,7 @@ Add this to your ESLint configuration.
 
 ``` json
 {
-	"extends" : "protect-me-from-my-stupidity"
+  "extends" : "protect-me-from-my-stupidity"
 }
 ```
 
@@ -18,10 +18,10 @@ However, if you don't care for code style rules, you can add this to your ESLint
 
 ``` json
 {
-	"extends" : [
-		"protect-me-from-my-stupidity",
-		"protect-me-from-my-stupidity/but-let-my-code-look-stupid"
-	]
+  "extends" : [
+    "protect-me-from-my-stupidity",
+    "protect-me-from-my-stupidity/but-let-my-code-look-stupid"
+  ]
 }
 ```
 
@@ -29,10 +29,10 @@ Finally, when you are writing tests, you can loosen the rules by adding this to 
 
 ``` json
 {
-	"extends" : [
-		"protect-me-from-my-stupidity",
-		"protect-me-from-my-stupidity/but-let-me-write-stupid-tests"
-	]
+  "extends" : [
+    "protect-me-from-my-stupidity",
+    "protect-me-from-my-stupidity/but-let-me-write-stupid-tests"
+  ]
 }
 ```
 

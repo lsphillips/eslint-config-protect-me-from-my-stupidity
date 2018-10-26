@@ -1,45 +1,45 @@
 {
-	"name" : "eslint-config-protect-me-from-my-stupidity",
+    "name" : "eslint-config-protect-me-from-my-stupidity",
 
-	"version" : "3.0.0",
+    "version" : "3.0.0",
 
-	"description" : "An opinionated ESLint configuration that shall protect you from your stupidity when writing JavaScript.",
+    "description" : "An opinionated ESLint configuration that shall protect you from your stupidity when writing JavaScript.",
 
-	"author" :
-	{
-		"name" : "Luke Phillips",
-		"email" : "lsphillips.mail@gmail.com"
-	},
+    "author" :
+    {
+        "name" : "Luke Phillips",
+        "email" : "lsphillips.mail@gmail.com"
+    },
 
-	"keywords" :
-	[
-		"eslint",
-		"eslint-config",
-		"style-guide",
-		"rules"
-	],
+    "keywords" :
+    [
+        "eslint",
+        "eslint-config",
+        "style-guide",
+        "rules"
+    ],
 
-	"repository" :
-	{
-		"type" : "git",
-		"url" : "https://github.com/lsphillips/ProtectMeFromMyStupidity.git"
-	},
+    "repository" :
+    {
+        "type" : "git",
+        "url" : "https://github.com/lsphillips/ProtectMeFromMyStupidity.git"
+    },
 
-	"homepage" : "https://github.com/lsphillips/ProtectMeFromMyStupidity",
+    "homepage" : "https://github.com/lsphillips/ProtectMeFromMyStupidity",
 
-	"bugs" :
-	{
-		"url" : "https://github.com/lsphillips/ProtectMeFromMyStupidity/issues"
-	},
+    "bugs" :
+    {
+        "url" : "https://github.com/lsphillips/ProtectMeFromMyStupidity/issues"
+    },
 
-	"main" : "protect-me-from-my-stupidity.js",
+    "main" : "protect-me-from-my-stupidity.js",
 
-	"peerDependencies" :
-	{
-		"eslint" : "^5.7.0",
-		"eslint-plugin-import" : "^2.14.0",
-		"eslint-plugin-promise" : "^4.0.0"
-	},
+    "peerDependencies" :
+    {
+        "eslint" : "^5.7.0",
+        "eslint-plugin-import" : "^2.14.0",
+        "eslint-plugin-promise" : "^4.0.0"
+    },
 
-	"license" : "UNLICENSED"
+    "license" : "UNLICENSED"
 }

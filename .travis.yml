@@ -1,19 +1,18 @@
-
 # Build
 # -------------------------------------
 
 language: node_js
 node_js:
-    - "9"
+  - "9"
 
 # Deployment
 # -------------------------------------
 
 deploy:
-    provider: npm
-    on:
-        tags: true
-        node: "9"
-    api_key:
-        secure: "FlbnvCeqkaSescCSf9UY5jppBoNjcg3xnztJHubEfi8wrqSF0Caan8UmuSaPY0lA/dWIdmwXzkg3nmu9e6VbfZxHNnlNMnM6kiKIbkmp2VoKycKuqgyj9WTjF3VY5xHf5+bjB6AVqVZyzHhbYWdPIc+7AXYFODxHe0VJgrdbJszK+NNpCv2Mc9uYZEFhkPPzttoegp0Db2wmqWs+p7c6c5OWgZDJdFqAq2eT5jwojHLia9anKK5Jyxh7d66MOLgR/heyeYto9zp2PNLs+BGRR5mqKDOpj+urNCAKtSWkzBjuHN/cf6921ZVEEQ6mS+DGJb9Yo4u4p/9x6plHoaXGcuG7+h+Yw9X4VSfwS68ZIUh+9V68rpbHRTFXNd/ezBrPmkMB0y+hWZJsrTYSo2celev0AHm0tSR6npsM8C4p8lRoLoLOtlDS4rg3uMZR60y7iEJ/eKzk5O8+frCvgPcynLNTQpQuCfF7vVG/E0uzrtEQlYdMHFoic6vVkb5r5DiU4SL10zJucc1d2jyG1BIuBcie/7kqAy1Oq/LFpRbM+PbuzSOX9Tu//PngFTFwH7uC7HAs/8CMkmx4++ImmfGFUrO8BEu4d96MFDJBivk+wNiHNoQGhHz04vkmbqR/rs2qw+D19x09lp8VUNCGNGWtGXEhEK6zRJPCqCP4SXT5Pto="
-    email: "lsphillips.mail@gmail.com"
+  provider: npm
+  on:
+    tags: true
+    node: "9"
+  api_key:
+    secure: "FlbnvCeqkaSescCSf9UY5jppBoNjcg3xnztJHubEfi8wrqSF0Caan8UmuSaPY0lA/dWIdmwXzkg3nmu9e6VbfZxHNnlNMnM6kiKIbkmp2VoKycKuqgyj9WTjF3VY5xHf5+bjB6AVqVZyzHhbYWdPIc+7AXYFODxHe0VJgrdbJszK+NNpCv2Mc9uYZEFhkPPzttoegp0Db2wmqWs+p7c6c5OWgZDJdFqAq2eT5jwojHLia9anKK5Jyxh7d66MOLgR/heyeYto9zp2PNLs+BGRR5mqKDOpj+urNCAKtSWkzBjuHN/cf6921ZVEEQ6mS+DGJb9Yo4u4p/9x6plHoaXGcuG7+h+Yw9X4VSfwS68ZIUh+9V68rpbHRTFXNd/ezBrPmkMB0y+hWZJsrTYSo2celev0AHm0tSR6npsM8C4p8lRoLoLOtlDS4rg3uMZR60y7iEJ/eKzk5O8+frCvgPcynLNTQpQuCfF7vVG/E0uzrtEQlYdMHFoic6vVkb5r5DiU4SL10zJucc1d2jyG1BIuBcie/7kqAy1Oq/LFpRbM+PbuzSOX9Tu//PngFTFwH7uC7HAs/8CMkmx4++ImmfGFUrO8BEu4d96MFDJBivk+wNiHNoQGhHz04vkmbqR/rs2qw+D19x09lp8VUNCGNGWtGXEhEK6zRJPCqCP4SXT5Pto="
+  email: "lsphillips.mail@gmail.com"

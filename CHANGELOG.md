@@ -96,16 +96,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - The `max-depth` and `max-nested-callbacks` rules have both been lowered to **3**.
 - `protect-me-from-my-stupidity/but-let-my-code-look-stupid` to longer inherits from `protect-me-from-my-stupidity`. You will now have to extend both:
 
-	```json
-	{
-		"extends" : [
-			"protect-me-from-my-stupidity",
-			"protect-me-from-my-stupidity/but-let-my-code-look-stupid"
-		]
-	}
-	```
+  ```json
+  {
+    "extends" : [
+      "protect-me-from-my-stupidity",
+      "protect-me-from-my-stupidity/but-let-my-code-look-stupid"
+    ]
+  }
+  ```
 
-	The same applies to the `protect-me-from-my-stupidity/but-let-me-write-stupid-tests` configuration.
+  The same applies to the `protect-me-from-my-stupidity/but-let-me-write-stupid-tests` configuration.
 
 ### Fixed
 
