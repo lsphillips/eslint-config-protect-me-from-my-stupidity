@@ -2,6 +2,17 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [3.1.1] (2018-10-29)
+
+### Changed
+
+- Updated the `import/order` rule to enforce the following import order:
+  1. Builtin Node.js modules.
+  2. External modules.
+  3. Internal modules.
+  4. All other modules.
+- Switched the `import/no-unassigned-import` rule off.
+
 ## [3.1.0] (2018-10-29)
 
 ### Changed
