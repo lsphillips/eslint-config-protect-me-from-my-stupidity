@@ -2,6 +2,13 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [3.1.0] (2018-10-29)
+
+### Changed
+
+- Updated the `quote-props` rule to enforce consistency rather than necessity.
+- Switched the `linebreak-style` rule off.
+
 ## [3.0.0] (2018-10-26)
 
 ### Added

@@ -68,7 +68,7 @@ This project follows a semantic versioning policy that aims not to surprise you:
 
 ### Minor release
 
-- Updating an existing rule that will result in ESLint reporting more errors.
+- Updating an existing rule that will result in ESLint reporting different or more errors.
 - Adding a new rule.
 
 ### Major release
