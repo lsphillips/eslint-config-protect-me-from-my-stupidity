@@ -2,6 +2,13 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [3.1.2] (2018-11-29)
+
+### Changed
+
+- Updated the `strict` rule to only disallow strict mode directives when it is considered unsafe.
+- Strict mode is no longer implied in the parser options.
+
 ## [3.1.1] (2018-10-29)
 
 ### Changed

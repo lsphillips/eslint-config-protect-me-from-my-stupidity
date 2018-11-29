@@ -10,8 +10,7 @@ module.exports =
 
 		"ecmaFeatures" :
 		{
-			"jsx" : true,
-			"impliedStrict" : true
+			"jsx" : true
 		},
 
 		"sourceType" : "module"
@@ -127,7 +126,7 @@ module.exports =
 		"vars-on-top"                        : "off",
 		"wrap-iife"                          : "error",
 		"yoda"                               : "error",
-		"strict"                             : "error",
+		"strict"                             : ["error", "safe"],
 		"init-declarations"                  : "off",
 		"no-catch-shadow"                    : "error",
 		"no-delete-var"                      : "error",
