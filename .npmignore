@@ -1,5 +1,6 @@
 # Files
 # -----------------
 
+.editorconfig
 .gitignore
 .travis.yml
