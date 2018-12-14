@@ -287,7 +287,7 @@ module.exports =
 		"import/newline-after-import"        : "error",
 		"import/no-absolute-path"            : "error",
 		"import/no-amd"                      : "error",
-		"import/no-anonymous-default-export" : "error",
+		"import/no-anonymous-default-export" : "off",
 		"import/no-commonjs"                 : "off",
 		"import/no-cycle"                    : ["error", { "commonjs" : true }],
 		"import/no-default-export"           : "off",

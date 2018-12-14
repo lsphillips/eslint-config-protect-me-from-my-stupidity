@@ -2,6 +2,12 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [3.1.3] (2018-12-14)
+
+### Changed
+
+- Switched the `import/no-anonymous-default-export` rule off.
+
 ## [3.1.2] (2018-11-29)
 
 ### Changed
