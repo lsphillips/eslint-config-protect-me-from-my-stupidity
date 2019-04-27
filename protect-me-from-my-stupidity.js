@@ -152,7 +152,7 @@ module.exports =
 		"no-sync"                            : "error",
 		"array-bracket-newline"              : ["error", "consistent"],
 		"array-bracket-spacing"              : "error",
-		"array-element-newline"              : ["error", { "multiline" : true, "minItems" : 5 }],
+		"array-element-newline"              : ["error", "consistent"],
 		"block-spacing"                      : "error",
 		"brace-style"                        : ["error", "allman"],
 		"camelcase"                          : "error",

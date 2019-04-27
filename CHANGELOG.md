@@ -2,6 +2,12 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [3.2.0] (2019-04-27)
+
+### Changed
+
+- Updated the `array-element-newline` rule to just enforce consistency.
+
 ## [3.1.3] (2018-12-14)
 
 ### Changed
