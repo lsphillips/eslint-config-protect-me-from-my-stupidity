@@ -97,6 +97,7 @@ module.exports =
 		"template-tag-spacing"               : "off",
 		"unicode-bom"                        : "off",
 		"wrap-regex"                         : "off",
+		"function-call-argument-newline"     : "off",
 		"import/first"                       : "off",
 		"import/exports-last"                : "off",
 		"import/no-duplicates"               : "off",

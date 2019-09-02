@@ -9,6 +9,6 @@ module.exports =
 		"no-invalid-this"       : "off",
 		"no-unused-expressions" : "off",
 		"func-names"            : "off",
-		"max-nested-callbacks"  : ["error", 5]
+		"max-nested-callbacks"  : "off"
 	}
 };

@@ -2,6 +2,18 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [4.0.0] (2019-09-02)
+
+### Added
+
+- Switched the new `no-useless-catch` rule on to prohibit catch blocks that just rethrow the error.
+- Switched the new `prefer-named-capture-group`, `function-call-argument-newline` and `import/no-unused-modules` rules off.
+
+### Changed
+
+- Switched the `max-len` rule off.
+- Switched the `max-nested-callbacks` rule off in the `protect-me-from-my-stupidity/but-let-me-write-stupid-tests` configuration.
+
 ## [3.2.0] (2019-04-27)
 
 ### Changed
