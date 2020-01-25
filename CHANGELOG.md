@@ -2,16 +2,35 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
-## [5.0.0] (2019-09-08)
+## [5.0.0] (2020-01-25)
 
 ### Added
 
-- Switched the `arrow-spacing` and `dot-location` rules off in the `protect-me-from-my-stupidity/but-let-my-code-look-stupid` configuration.
-- Created the `protect-me-from-my-stupidity/and-protect-me-from-writing-stupid-vue-components` and `protect-me-from-my-stupidity/but-let-my-vue-components-look-stupid` configurations.
+- Switched the `default-case` rule on to prohibit `switch` statements without a `default` clause.
+- Switched the `default-param-last` rule on to enforce that defaults are only defined for tail parameters.
+- Switched the `grouped-accessor-pairs` rule on to enforce that getter/setter pairs are defined adjacently with the getter degined first.
+- Switched the `no-constructor-return` rule to to prohibit `return` statements in constructors.
+- Switched the `no-dupe-else-if` rule on to prohibit duplicate conditions in `if-else-if` chains.
+- Switched the `no-dupe-keys` rule on to prohibit duplicate keys in object definitions.
+- Switched the `no-import-assign` rule on to prohibit import bindings being assigned.
+- Switched the `no-setter-return` rule on to prohibit setters from returning a value.
+- Switched the `no-useless-computed-key` rule on to prohibit pointless computed keys.
+- Switched the `no-useless-constructor` rule on to prohibit constructors that do nothing.
+- Switched the `prefer-exponentiation-operator` rule to enforce the use of the `**` operator instead of `Math.pow()`.
+- Switched the `prefer-regex-literals` rule on to prohibit the use of the `RegExp` constructor for non-dynamic regular expressions.
+- Introduced a new rule configurations for writing Vue components: `protect-me-from-my-stupidity/and/from-writing-stupid-vue-components` and `protect-me-from-my-stupidity/but/let-my-vue-components-look-stupid`.
 
 ### Changed
 
+- Switched the `arrow-spacing` and `dot-location` rules off in the `protect-me-from-my-stupidity/but/let-my-code-look-stupid` configuration.
+- Moved the `protect-me-from-my-stupidity/but-let-my-code-look-stupid` configuration to `protect-me-from-my-stupidity/but/let-my-code-look-stupid`.
 - Updated the ECMAScript version to `11` (2020).
+- Moved the `protect-me-from-my-stupidity/but-let-me-write-stupid-tests` configuration to `protect-me-from-my-stupidity/but/let-me-write-stupid-tests`.
+- Switched the `spaced-comment`, `padded-blocks`, `line-comment-position`, `max-classes-per-file`, `prefer-object-spread`, `import/group-exports` and `promise/no-callback-in-promise` rules off in the `protect-me-from-my-stupidity` configuration.
+
+### Removed
+
+- Removed the `valid-jsdoc`, `no-catch-shadow` and `require-jsdoc` deprecated rules.
 
 ## [4.0.0] (2019-09-02)
 
