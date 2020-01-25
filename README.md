@@ -14,33 +14,31 @@ Add this to your ESLint configuration.
 }
 ```
 
-However, if you don't care for code style rules, you can add this to your ESLint configuration:
+You can use [configuration extensions](#configuration-extensions) to further cater for more specific scenarios, for example:
 
 ``` json
 {
   "extends" : [
     "protect-me-from-my-stupidity",
-    "protect-me-from-my-stupidity/but-let-my-code-look-stupid"
+    "protect-me-from-my-stupidity/but/let-my-code-look-stupid"
   ]
 }
 ```
 
-Finally, when you are writing tests, you can loosen the rules by adding this to your ESLint configuration:
+### Configuration extensions
 
-``` json
-{
-  "extends" : [
-    "protect-me-from-my-stupidity",
-    "protect-me-from-my-stupidity/but-let-me-write-stupid-tests"
-  ]
-}
-```
+| Configuration                                       | Usage                                                           |
+| --------------------------------------------------- | --------------------------------------------------------------- |
+| `and/from-writing-stupid-vue-components`            | Introduces additional rules for Vue components.                 |
+| `but/let-my-code-look-stupid`                       | Stops all code style checks.                                    |
+| `but/let-me-write-stupid-tests`                     | Loosens up some rules for writing test specifications.          |
+| `but/let-my-vue-components-look-stupid`             | Stops all code style checks for Vue components.                 |
 
 ## Parser
 
 This project configures ESLint to parse JavaScript with the following in mind:
 
-- All features up to ECMAScript 2018 are enabled.
+- All features up to ECMAScript 2020 are enabled.
 - JSX is enabled.
 - Modules, as defined by ECMAScript 2015, are enabled.
 - Global strict mode is enabled.
@@ -49,16 +47,17 @@ This project configures ESLint to parse JavaScript with the following in mind:
 
 ## Plugins
 
-This project draws the line at JavaScript. Therefore it will not take a stance on frameworks like React or transpilers like TypeScript.
-
 This project currently includes configuration for the following plugins:
 
-- [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
-- [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise)
+| Plugin                                                                       | Required dependency                          |
+| ---------------------------------------------------------------------------- | -------------------------------------------- |
+| [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)   | Yes                                          |
+| [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise) | Yes                                          |
+| [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)         | Only when using `vue` related configuration. |
 
 **Note:** You will have to install the above plugins yourself as they are peer dependencies.
 
-## Semantic Versioning
+## Semantic versioning
 
 This project follows a semantic versioning policy that aims not to surprise you:
 

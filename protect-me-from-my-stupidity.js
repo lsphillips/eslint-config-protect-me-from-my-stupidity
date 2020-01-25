@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -6,7 +6,7 @@ module.exports =
 {
 	"parserOptions" :
 	{
-		"ecmaVersion" : 9,
+		"ecmaVersion" : 11,
 
 		"ecmaFeatures" :
 		{
@@ -55,7 +55,6 @@ module.exports =
 		"no-unsafe-finally"                  : "error",
 		"no-unsafe-negation"                 : "error",
 		"use-isnan"                          : "error",
-		"valid-jsdoc"                        : ["warn", { "requireReturn" : false }],
 		"valid-typeof"                       : "error",
 		"accessor-pairs"                     : "warn",
 		"array-callback-return"              : "error",
@@ -128,7 +127,6 @@ module.exports =
 		"yoda"                               : "error",
 		"strict"                             : ["error", "safe"],
 		"init-declarations"                  : "off",
-		"no-catch-shadow"                    : "error",
 		"no-delete-var"                      : "error",
 		"no-label-var"                       : "error",
 		"no-restricted-globals"              : "off",
@@ -176,7 +174,6 @@ module.exports =
 		"jsx-quotes"                         : "error",
 		"key-spacing"                        : ["error", { "beforeColon" : true, "afterColon" : true, "mode" : "minimum" }],
 		"keyword-spacing"                    : "error",
-		"line-comment-spacing"               : "off",
 		"linebreak-style"                    : "off",
 		"lines-around-comment"               : "off",
 		"lines-between-class-members"        : "error",
@@ -221,11 +218,9 @@ module.exports =
 		"one-var-declaration-per-line"       : "off",
 		"operator-assignment"                : "error",
 		"operator-linebreak"                 : "off",
-		"padding-blocks"                     : "off",
 		"padding-line-between-statements"    : "off",
 		"quote-props"                        : ["error", "consistent"],
 		"quotes"                             : ["error", "single"],
-		"require-jsdoc"                      : "off",
 		"semi"                               : "error",
 		"semi-spacing"                       : "error",
 		"semi-style"                         : "error",
@@ -236,7 +231,7 @@ module.exports =
 		"space-in-parens"                    : "error",
 		"space-infix-ops"                    : "error",
 		"space-unary-ops"                    : "error",
-		"spaced-comments"                    : "off",
+		"spaced-comment"                     : "off",
 		"switch-colon-spacing"               : ["error", { "before" : true, "after" : true }],
 		"template-tag-spacing"               : ["error", "always"],
 		"unicode-bom"                        : "error",
@@ -257,6 +252,7 @@ module.exports =
 		"no-useless-rename"                  : "warn",
 		"no-var"                             : "error",
 		"object-shorthand"                   : "error",
+		"padded-blocks"                      : "off",
 		"prefer-arrow-callback"              : "off",
 		"prefer-const"                       : "off",
 		"prefer-destructuring"               : "off",
@@ -277,13 +273,28 @@ module.exports =
 		"no-useless-catch"                   : "error",
 		"prefer-named-capture-group"         : "off",
 		"function-call-argument-newline"     : "off",
+		"default-case"                       : "error",
+		"default-param-last"                 : "error",
+		"grouped-accessor-pairs"             : ["error", "getBeforeSet"],
+		"line-comment-position"              : "off",
+		"max-classes-per-file"               : "off",
+		"no-constructor-return"              : "error",
+		"no-dupe-else-if"                    : "error",
+		"no-dupe-keys"                       : "error",
+		"no-import-assign"                   : "error",
+		"no-setter-return"                   : "error",
+		"no-useless-computed-key"            : "error",
+		"no-useless-constructor"             : "error",
+		"prefer-exponentiation-operator"     : "error",
+		"prefer-object-spread"               : "off",
+		"prefer-regex-literals"              : "error",
 		"import/default"                     : "error",
 		"import/dynamic-import-chunkname"    : "off",
 		"import/export"                      : "error",
 		"import/exports-last"                : "off",
 		"import/extensions"                  : "off",
 		"import/first"                       : "error",
-		"import/group-export"                : "off",
+		"import/group-exports"               : "off",
 		"import/max-dependencies"            : ["error", { "max" : 20 }],
 		"import/named"                       : "error",
 		"import/namespace"                   : "error",
@@ -324,7 +335,7 @@ module.exports =
 		"promise/no-native"                  : "off",
 		"promise/no-nesting"                 : "warn",
 		"promise/no-promise-in-callback"     : "off",
-		"promsie/no-callback-in-promise"     : "off",
+		"promise/no-callback-in-promise"     : "off",
 		"promise/avoid-new"                  : "off",
 		"promise/no-new-statics"             : "error",
 		"promise/no-return-in-finally"       : "error",

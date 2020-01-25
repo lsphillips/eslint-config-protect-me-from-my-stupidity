@@ -4,3 +4,9 @@
 .npmrc
 .editorconfig
 .gitignore
+.eslintrc
+
+# Tests
+# -----------------
+
+test.js

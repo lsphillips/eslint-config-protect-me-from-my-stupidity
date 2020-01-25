@@ -1,14 +1,21 @@
-'use strict';
+"use strict";
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 module.exports =
 {
+	"plugins" :
+	[
+		"import",
+		"promise"
+	],
+
 	"rules" :
 	{
 		"array-bracket-newline"              : "off",
 		"array-bracket-spacing"              : "off",
 		"array-element-newline"              : "off",
+		"arrow-spacing"                      : "off",
 		"block-spacing"                      : "off",
 		"brace-style"                        : "off",
 		"camelcase"                          : "off",
@@ -18,12 +25,14 @@ module.exports =
 		"comma-style"                        : "off",
 		"computed-property-spacing"          : "off",
 		"consistent-this"                    : "off",
+		"dot-location"                       : "off",
 		"eol-last"                           : "off",
 		"func-call-spacing"                  : "off",
 		"func-name-matching"                 : "off",
 		"func-names"                         : "off",
 		"func-style"                         : "off",
 		"function-paren-newline"             : "off",
+		"grouped-accessor-pairs"             : "off",
 		"id-blacklist"                       : "off",
 		"id-length"                          : "off",
 		"id-match"                           : "off",
@@ -32,11 +41,12 @@ module.exports =
 		"jsx-quotes"                         : "off",
 		"key-spacing"                        : "off",
 		"keyword-spacing"                    : "off",
-		"line-comment-spacing"               : "off",
 		"linebreak-style"                    : "off",
 		"lines-around-comment"               : "off",
 		"lines-between-class-members"        : "off",
+		"line-comment-position"              : "off",
 		"max-depth"                          : "off",
+		"max-classes-per-file"               : "off",
 		"max-len"                            : "off",
 		"max-lines"                          : "off",
 		"max-nested-callbacks"               : "off",
@@ -66,6 +76,8 @@ module.exports =
 		"no-tabs"                            : "off",
 		"no-ternary"                         : "off",
 		"no-trailing-spaces"                 : "off",
+		"no-useless-computed-key"            : "off",
+		"no-useless-constructor"             : "off",
 		"no-underscore-dangle"               : "off",
 		"no-unneeded-ternary"                : "off",
 		"no-whitespace-before-property"      : "off",
@@ -77,11 +89,13 @@ module.exports =
 		"one-var-declaration-per-line"       : "off",
 		"operator-assignment"                : "off",
 		"operator-linebreak"                 : "off",
-		"padding-blocks"                     : "off",
+		"padded-blocks"                      : "off",
 		"padding-line-between-statements"    : "off",
+		"prefer-exponentiation-operator"     : "off",
+		"prefer-object-spread"               : "off",
+		"prefer-regex-literals"              : "off",
 		"quote-props"                        : "off",
 		"quotes"                             : "off",
-		"require-jsdoc"                      : "off",
 		"semi"                               : "off",
 		"semi-spacing"                       : "off",
 		"semi-style"                         : "off",
@@ -92,7 +106,7 @@ module.exports =
 		"space-in-parens"                    : "off",
 		"space-infix-ops"                    : "off",
 		"space-unary-ops"                    : "off",
-		"spaced-comments"                    : "off",
+		"spaced-comment"                     : "off",
 		"switch-colon-spacing"               : "off",
 		"template-tag-spacing"               : "off",
 		"unicode-bom"                        : "off",
@@ -111,6 +125,6 @@ module.exports =
 		"import/no-named-default"            : "off",
 		"import/no-default-export"           : "off",
 		"import/no-anonymous-default-export" : "off",
-		"import/group-export"                : "off"
+		"import/group-exports"               : "off"
 	}
 };

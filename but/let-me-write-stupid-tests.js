@@ -1,9 +1,15 @@
-'use strict';
+"use strict";
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 module.exports =
 {
+	"plugins" :
+	[
+		"import",
+		"promise"
+	],
+
 	"rules" :
 	{
 		"no-invalid-this"       : "off",

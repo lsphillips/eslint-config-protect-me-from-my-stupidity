@@ -1,7 +1,7 @@
 {
     "name" : "eslint-config-protect-me-from-my-stupidity",
 
-    "version" : "4.0.0",
+    "version" : "5.0.0",
 
     "description" : "An opinionated ESLint configuration that shall protect you from your stupidity when writing JavaScript.",
 
@@ -36,9 +36,27 @@
 
     "peerDependencies" :
     {
-        "eslint" : "^6.3.0",
-        "eslint-plugin-import" : "^2.18.0",
-        "eslint-plugin-promise" : "^4.2.0"
+        "eslint" : "^6.8.0",
+        "eslint-plugin-import" : "^2.20.0",
+        "eslint-plugin-promise" : "^4.2.1",
+        "eslint-plugin-vue" : "^6.1.2"
+    },
+
+    "devDependencies" :
+    {
+        "eslint" : "6.8.0",
+        "eslint-plugin-import" : "2.20.0",
+        "eslint-plugin-promise" : "4.2.1",
+        "eslint-plugin-vue" : "6.1.2",
+        "eslint-config-protect-me-from-my-stupidity" : "file:.",
+        "text-table" : "0.2.0",
+        "colors" : "1.4.0"
+    },
+
+    "scripts" :
+    {
+        "lint" : "eslint \"**/*.js\"",
+        "test" : "node test.js"
     },
 
     "license" : "UNLICENSED"

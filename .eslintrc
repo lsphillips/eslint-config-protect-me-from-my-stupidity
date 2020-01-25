@@ -1,0 +1,27 @@
+{
+	"extends" : "protect-me-from-my-stupidity",
+
+	"env" :
+	{
+		"node"     : true,
+		"es6"      : true,
+		"commonjs" : true
+	},
+
+	"parserOptions" :
+	{
+		"sourceType" : "script"
+	},
+
+	"overrides" :
+	[
+		{
+			"files" : ["protect-me-from-my-stupidity.js", "and/**/*.js", "but/**/*.js"],
+
+			"rules" :
+			{
+				"quotes" : ["error", "double"]
+			}
+		}
+	]
+}

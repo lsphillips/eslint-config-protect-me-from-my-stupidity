@@ -2,6 +2,17 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [5.0.0] (2019-09-08)
+
+### Added
+
+- Switched the `arrow-spacing` and `dot-location` rules off in the `protect-me-from-my-stupidity/but-let-my-code-look-stupid` configuration.
+- Created the `protect-me-from-my-stupidity/and-protect-me-from-writing-stupid-vue-components` and `protect-me-from-my-stupidity/but-let-my-vue-components-look-stupid` configurations.
+
+### Changed
+
+- Updated the ECMAScript version to `11` (2020).
+
 ## [4.0.0] (2019-09-02)
 
 ### Added
