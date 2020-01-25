@@ -56,7 +56,8 @@
     "scripts" :
     {
         "lint" : "eslint \"**/*.js\"",
-        "test" : "node test.js"
+        "validate" : "node validate.js",
+        "test" : "npm run lint && npm run validate"
     },
 
     "license" : "UNLICENSED"

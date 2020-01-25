@@ -6,7 +6,12 @@
 .gitignore
 .eslintrc
 
+# Travis
+# -----------------
+
+.travis.yml
+
 # Tests
 # -----------------
 
-test.js
+validate.js
