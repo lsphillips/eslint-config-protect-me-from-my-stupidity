@@ -55,6 +55,8 @@ function getDisallowedRules (rules, loaded)
 		]);
 }
 
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
 function test ({
 	configuration, onlyRuleSets = [], includeAllRules = true
 })

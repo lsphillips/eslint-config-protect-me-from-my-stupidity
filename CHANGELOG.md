@@ -8,7 +8,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Switched the `default-case` rule on to prohibit `switch` statements without a `default` clause.
 - Switched the `default-param-last` rule on to enforce that defaults are only defined for tail parameters.
-- Switched the `grouped-accessor-pairs` rule on to enforce that getter/setter pairs are defined adjacently with the getter degined first.
+- Switched the `grouped-accessor-pairs` rule on to enforce that getter/setter pairs are defined adjacently with the getter defined first.
 - Switched the `no-constructor-return` rule to to prohibit `return` statements in constructors.
 - Switched the `no-dupe-else-if` rule on to prohibit duplicate conditions in `if-else-if` chains.
 - Switched the `no-dupe-keys` rule on to prohibit duplicate keys in object definitions.
@@ -18,15 +18,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - Switched the `no-useless-constructor` rule on to prohibit constructors that do nothing.
 - Switched the `prefer-exponentiation-operator` rule to enforce the use of the `**` operator instead of `Math.pow()`.
 - Switched the `prefer-regex-literals` rule on to prohibit the use of the `RegExp` constructor for non-dynamic regular expressions.
-- Introduced a new rule configurations for writing Vue components: `protect-me-from-my-stupidity/and/from-writing-stupid-vue-components` and `protect-me-from-my-stupidity/but/let-my-vue-components-look-stupid`.
+- Introduced new rule configurations for writing Vue components: `protect-me-from-my-stupidity/and/from-writing-stupid-vue-components` and `protect-me-from-my-stupidity/but/let-my-vue-components-look-stupid`.
 
 ### Changed
 
-- Switched the `arrow-spacing` and `dot-location` rules off in the `protect-me-from-my-stupidity/but/let-my-code-look-stupid` configuration.
-- Moved the `protect-me-from-my-stupidity/but-let-my-code-look-stupid` configuration to `protect-me-from-my-stupidity/but/let-my-code-look-stupid`.
+- Switched the `spaced-comment`, `padded-blocks`, `line-comment-position`, `max-classes-per-file`, `prefer-object-spread`, `import/group-exports` and `promise/no-callback-in-promise` rules off in the `protect-me-from-my-stupidity` configuration.
 - Updated the ECMAScript version to `11` (2020).
 - Moved the `protect-me-from-my-stupidity/but-let-me-write-stupid-tests` configuration to `protect-me-from-my-stupidity/but/let-me-write-stupid-tests`.
-- Switched the `spaced-comment`, `padded-blocks`, `line-comment-position`, `max-classes-per-file`, `prefer-object-spread`, `import/group-exports` and `promise/no-callback-in-promise` rules off in the `protect-me-from-my-stupidity` configuration.
+- Moved the `protect-me-from-my-stupidity/but-let-my-code-look-stupid` configuration to `protect-me-from-my-stupidity/but/let-my-code-look-stupid`.
+- Switched the `arrow-spacing` and `dot-location` rules off in the `protect-me-from-my-stupidity/but/let-my-code-look-stupid` configuration.
 
 ### Removed
 
