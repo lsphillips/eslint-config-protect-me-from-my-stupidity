@@ -122,7 +122,5 @@ module.exports =
 				"indent" : "off"
 			}
 		}
-	],
-
-	"parser" : "vue-eslint-parser"
+	]
 };

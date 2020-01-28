@@ -2,6 +2,12 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [5.1.0] (2020-01-28)
+
+### Changed
+
+- Stopped defining the parser in the `protect-me-from-my-stupidity/and/from-writing-stupid-vue-components` configuration.
+
 ## [5.0.0] (2020-01-25)
 
 ### Added
