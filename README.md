@@ -30,9 +30,11 @@ You can use [configuration extensions](#configuration-extensions) to further cat
 | Configuration                                       | Usage                                                           |
 | --------------------------------------------------- | --------------------------------------------------------------- |
 | `and/from-writing-stupid-vue-components`            | Introduces additional rules for Vue components.                 |
+| `and/from-writing-stupid-node-applications`         | Introduces additional rules for Node applications.              |
 | `but/let-my-code-look-stupid`                       | Stops all code style checks.                                    |
 | `but/let-me-write-stupid-tests`                     | Loosens up some rules for writing test specifications.          |
 | `but/let-my-vue-components-look-stupid`             | Stops all code style checks for Vue components.                 |
+| `but/let-my-node-applications-look-stupid`          | Stops all code style checks for Node applications.              |
 
 ## Parser
 
@@ -49,11 +51,12 @@ This project configures ESLint to parse JavaScript with the following in mind:
 
 This project currently includes configuration for the following plugins:
 
-| Plugin                                                                       | Required dependency                          |
-| ---------------------------------------------------------------------------- | -------------------------------------------- |
-| [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)   | Yes                                          |
-| [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise) | Yes                                          |
-| [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)         | Only when using `vue` related configuration. |
+| Plugin                                                                       | Required dependency                           |
+| ---------------------------------------------------------------------------- | --------------------------------------------- |
+| [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)   | Yes                                           |
+| [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise) | Yes                                           |
+| [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)         | Only when using `vue` related configuration.  |
+| [eslint-plugin-node](https://www.npmjs.com/package/eslint-plugin-node)       | Only when using `node` related configuration. |
 
 **Note:** You will have to install the above plugins yourself as they are peer dependencies.
 

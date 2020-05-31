@@ -116,6 +116,16 @@ const passed =
 		onlyRuleSets    : ['core', 'promise', 'import']
 	},
 	{
+		configuration   : 'protect-me-from-my-stupidity/and/from-writing-stupid-node-applications',
+		includeAllRules : true,
+		onlyRuleSets    : ['node']
+	},
+	{
+		configuration   : 'protect-me-from-my-stupidity/but/let-my-node-applications-look-stupid',
+		includeAllRules : false,
+		onlyRuleSets    : ['node']
+	},
+	{
 		configuration   : 'protect-me-from-my-stupidity/and/from-writing-stupid-vue-components',
 		includeAllRules : true,
 		onlyRuleSets    : ['vue']

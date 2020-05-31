@@ -49,6 +49,8 @@ module.exports =
 		"vue/max-len"                                   : "off",
 		"vue/no-static-inline-styles"                   : "off",
 		"vue/require-name-property"                     : "off",
-		"vue/static-class-names-order"                  : "off"
+		"vue/static-class-names-order"                  : "off",
+		"vue/sort-keys"                                 : "off",
+		"vue/padding-line-between-blocks"               : "off"
 	}
 };

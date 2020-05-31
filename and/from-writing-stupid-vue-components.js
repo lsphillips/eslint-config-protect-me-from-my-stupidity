@@ -109,7 +109,9 @@ module.exports =
 		"vue/no-unsupported-features"                   : "off",
 		"vue/require-name-property"                     : "error",
 		"vue/static-class-names-order"                  : "off",
-		"vue/valid-v-bind-sync"                         : "error"
+		"vue/valid-v-bind-sync"                         : "error",
+		"vue/sort-keys"                                 : rules["sort-keys"],
+		"vue/padding-line-between-blocks"               : "error"
 	},
 
 	"overrides" :
