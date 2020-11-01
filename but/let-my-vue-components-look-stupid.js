@@ -20,7 +20,6 @@ module.exports =
 		"vue/max-attributes-per-line"                   : "off",
 		"vue/multiline-html-element-content-newline"    : "off",
 		"vue/mustache-interpolation-spacing"            : "off",
-		"vue/name-property-casing"                      : "off",
 		"vue/no-multi-spaces"                           : "off",
 		"vue/no-spaces-around-equal-signs-in-attribute" : "off",
 		"vue/no-template-shadow"                        : "off",
@@ -51,6 +50,19 @@ module.exports =
 		"vue/require-name-property"                     : "off",
 		"vue/static-class-names-order"                  : "off",
 		"vue/sort-keys"                                 : "off",
-		"vue/padding-line-between-blocks"               : "off"
+		"vue/padding-line-between-blocks"               : "off",
+		"vue/array-bracket-newline"                     : "off",
+		"vue/block-tag-newline"                         : "off",
+		"vue/comma-spacing"                             : "off",
+		"vue/comma-style"                               : "off",
+		"vue/custom-event-name-casing"                  : "off",
+		"vue/dot-notation"                              : "off",
+		"vue/func-call-spacing"                         : "off",
+		"vue/html-comment-content-newline"              : "off",
+		"vue/html-comment-content-spacing"              : "off",
+		"vue/html-comment-indent"                       : "off",
+		"vue/space-in-parens"                           : "off",
+		"vue/template-curly-spacing"                    : "off",
+		"vue/v-for-delimiter-style"                     : "off"
 	}
 };

@@ -29,11 +29,11 @@ You can use [configuration extensions](#configuration-extensions) to further cat
 
 | Configuration                                       | Usage                                                           |
 | --------------------------------------------------- | --------------------------------------------------------------- |
-| `and/from-writing-stupid-vue-components`            | Introduces additional rules for Vue components.                 |
+| `and/from-writing-stupid-vue-components`            | Introduces additional rules for Vue 2.x components.             |
 | `and/from-writing-stupid-node-applications`         | Introduces additional rules for Node applications.              |
 | `but/let-my-code-look-stupid`                       | Stops all code style checks.                                    |
 | `but/let-me-write-stupid-tests`                     | Loosens up some rules for writing test specifications.          |
-| `but/let-my-vue-components-look-stupid`             | Stops all code style checks for Vue components.                 |
+| `but/let-my-vue-components-look-stupid`             | Stops all code style checks for Vue 2.x components.             |
 | `but/let-my-node-applications-look-stupid`          | Stops all code style checks for Node applications.              |
 
 ## Parser

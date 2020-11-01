@@ -33,7 +33,7 @@ module.exports =
 		"func-style"                         : "off",
 		"function-paren-newline"             : "off",
 		"grouped-accessor-pairs"             : "off",
-		"id-blacklist"                       : "off",
+		"id-denylist"                        : "off",
 		"id-length"                          : "off",
 		"id-match"                           : "off",
 		"implicit-arrow-linebreak"           : "off",
