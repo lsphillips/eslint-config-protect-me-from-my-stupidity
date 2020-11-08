@@ -12,7 +12,6 @@ module.exports =
 	"rules" :
 	{
 		"vue/attribute-hyphenation"                     : "off",
-		"vue/html-closing-bracket-newline"              : "off",
 		"vue/html-closing-bracket-spacing"              : "off",
 		"vue/html-indent"                               : "off",
 		"vue/html-quotes"                               : "off",
