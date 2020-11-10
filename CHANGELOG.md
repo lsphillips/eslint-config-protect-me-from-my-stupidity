@@ -2,13 +2,25 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
-## [6.0.0] (2020-11-02)
+## [6.0.0] (2020-11-10)
 
 ### Added
 
+- Introduced `eslint-plugin-node` as a new optional plugin dependency.
+- Introduced new rule configurations for writing Node applications: `protect-me-from-my-stupidity/and/from-writing-stupid-node-applications` and `protect-me-from-my-stupidity/but/let-my-node-applications-look-stupid`.
+
 ### Changed
 
+- Updated the ECMAScript version to `12` (2021).
+- Updated the minimum required `eslint` version to `7.12.1`.
+- Updated the minimum required `eslint-plugin-import` version to `2.22.1`.
+- Updated the minimum required `eslint-plugin-promise` version to `4.2.1`.
+- Updated the minimum required `eslint-plugin-vue` version to `7.1.0`.
+
 ### Removed
+
+- JSX is no longer enabled in the parser options.
+- Removed all Node.js related rules that were deprecated in ESLint v7.0.
 
 ## [5.1.0] (2020-01-28)
 

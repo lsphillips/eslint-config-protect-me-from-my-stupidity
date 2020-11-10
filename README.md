@@ -27,25 +27,23 @@ You can use [configuration extensions](#configuration-extensions) to further cat
 
 ### Configuration extensions
 
-| Configuration                                       | Usage                                                           |
-| --------------------------------------------------- | --------------------------------------------------------------- |
-| `and/from-writing-stupid-vue-components`            | Introduces additional rules for Vue 2.x components.             |
-| `and/from-writing-stupid-node-applications`         | Introduces additional rules for Node applications.              |
-| `but/let-my-code-look-stupid`                       | Stops all code style checks.                                    |
-| `but/let-me-write-stupid-tests`                     | Loosens up some rules for writing test specifications.          |
-| `but/let-my-vue-components-look-stupid`             | Stops all code style checks for Vue 2.x components.             |
-| `but/let-my-node-applications-look-stupid`          | Stops all code style checks for Node applications.              |
+| Configuration                                       | Usage                                                                                                                                    |
+| --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `and/from-writing-stupid-vue-components`            | Introduces additional rules for Vue components. At the moment any Vue 3.0 rule that involves deprecating Vue 2.0 feature are turned off. |
+| `and/from-writing-stupid-node-applications`         | Introduces additional rules for Node applications.                                                                                       |
+| `but/let-my-code-look-stupid`                       | Stops all code style checks.                                                                                                             |
+| `but/let-me-write-stupid-tests`                     | Loosens up some rules for writing test specifications.                                                                                   |
+| `but/let-my-vue-components-look-stupid`             | Stops all code style checks for Vue components.                                                                                          |
+| `but/let-my-node-applications-look-stupid`          | Stops all code style checks for Node applications.                                                                                       |
 
 ## Parser
 
-This project configures ESLint to parse JavaScript with the following in mind:
+This project configures ESLint to parse JavaScript with the following in mind by default:
 
-- All features up to ECMAScript 2020 are enabled.
-- JSX is enabled.
-- Modules, as defined by ECMAScript 2015, are enabled.
-- Global strict mode is enabled.
+- ECMAScript modules are enabled.
+- All features up to ECMAScript 2021 are enabled.
 
-**Note:** This project makes no assumption about your JavaScript environment, you must configure that yourself. See https://eslint.org/docs/user-guide/configuring#specifying-environments.
+**Note:** This project makes no other assumption about your JavaScript environment, you must configure that yourself. See https://eslint.org/docs/user-guide/configuring#specifying-environments.
 
 ## Plugins
 
@@ -62,7 +60,7 @@ This project currently includes configuration for the following plugins:
 
 ## Semantic versioning
 
-This project follows a semantic versioning policy that aims not to surprise you:
+This project follows a semantic versioning policy that aims not to surprise you.
 
 ### Patch release
 
