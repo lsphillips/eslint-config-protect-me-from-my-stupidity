@@ -8,6 +8,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Introduced `eslint-plugin-node` as a new optional plugin dependency.
 - Introduced new rule configurations for writing Node applications: `protect-me-from-my-stupidity/and/from-writing-stupid-node-applications` and `protect-me-from-my-stupidity/but/let-my-node-applications-look-stupid`.
+- Switch the `no-nonoctal-decimal-escape` rule on to prohibit the use of non-octal decimal escape sequences.
 
 ### Changed
 

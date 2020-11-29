@@ -277,6 +277,7 @@ module.exports =
 		"no-useless-backreference"           : "error",
 		"no-promise-executor-return"         : "error",
 		"no-unreachable-loop"                : "error",
+		"no-nonoctal-decimal-escape"         : "error",
 		"import/default"                     : "error",
 		"import/dynamic-import-chunkname"    : "off",
 		"import/export"                      : "error",
