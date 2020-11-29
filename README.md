@@ -29,7 +29,7 @@ You can use [configuration extensions](#configuration-extensions) to further cat
 
 | Configuration                                       | Usage                                                                                                                                    |
 | --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `and/from-writing-stupid-vue-components`            | Introduces additional rules for Vue components. At the moment any Vue 3.0 rule that involves deprecating Vue 2.0 feature are turned off. |
+| `and/from-writing-stupid-vue-components`            | Introduces additional rules for Vue components. At the moment any Vue 3.0 rules that involve deprecating Vue 2.0 feature are turned off. |
 | `and/from-writing-stupid-node-applications`         | Introduces additional rules for Node applications.                                                                                       |
 | `but/let-my-code-look-stupid`                       | Stops all code style checks.                                                                                                             |
 | `but/let-me-write-stupid-tests`                     | Loosens up some rules for writing test specifications.                                                                                   |
