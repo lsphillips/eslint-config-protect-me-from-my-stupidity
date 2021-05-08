@@ -23,5 +23,7 @@
 				"quotes" : ["error", "double"]
 			}
 		}
-	]
+	],
+
+	"root" : true
 }
