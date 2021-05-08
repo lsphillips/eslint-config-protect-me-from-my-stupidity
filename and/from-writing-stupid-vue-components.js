@@ -178,7 +178,19 @@ module.exports =
 		"vue/space-in-parens"                           : rules["space-in-parens"],
 		"vue/template-curly-spacing"                    : rules["template-curly-spacing"],
 		"vue/v-for-delimiter-style"                     : ["error", "in"],
-		"vue/valid-v-is"                                : "error"
+		"vue/valid-v-is"                                : "error",
+		"vue/html-button-has-type"                      : "error",
+		"vue/new-line-between-multi-line-property"      : "error",
+		"vue/next-tick-style"                           : ["error", "promise"],
+		"vue/no-constant-condition"                     : rules["no-constant-condition"],
+		"vue/no-invalid-model-keys"                     : "error",
+		"vue/no-restricted-block"                       : "off",
+		"vue/no-restricted-call-after-await"            : "off",
+		"vue/no-restricted-custom-event"                : "off",
+		"vue/no-restricted-props"                       : "off",
+		"vue/no-unused-refs"                            : "error",
+		"vue/v-on-event-hyphenation"                    : ["error", "always", { "autofix" : false }],
+		"vue/valid-next-tick"                           : "error"
 	},
 
 	"overrides" :

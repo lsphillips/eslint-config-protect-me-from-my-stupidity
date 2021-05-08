@@ -2,13 +2,31 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [7.0.0] (2021-05-08)
+
+### Added
+
+- Switched the `no-unsafe-optional-chaining` rule on to prohibit the use of optional chaining where `undefined` is not allowed, this includes arithmetic operations.
+- Switched the `vue/no-unused-refs` rule on to ensure all defined refs are utilised.
+- Switched the `vue/no-invalid-model-keys` rule on to ensure component `model` definitions are correct.
+- Switched the `vue/valid-next-tick` and `vue/next-tick-style` rules on to ensure correct `vm.$nextTick` and `Vue.nextTick` usage, this includes prohibiting the use of the callback style in favour of the promise style.
+- Switched the `vue/html-button-has-type` on, prohibiting buttons from not having an explicit type.
+- Switched the `vue/no-restricted-block`, `vue/no-restricted-call-after-await`, `vue/no-restricted-custom-event` and `vue/no-restricted-props` rules off.
+- Switched the `vue/new-line-between-multi-line-property` and `vue/v-on-event-hyphenation` style rules on. They are switched off when using the `protect-me-from-my-stupidity/but/let-my-vue-components-look-stupid` configuration.
+
+### Changed
+
+- Updated the minimum required `eslint` version to `7.26.0`.
+- Updated the minimum required `eslint-plugin-promise` version to `5.1.0`.
+- Updated the minimum required `eslint-plugin-vue` version to `7.9.0`.
+
 ## [6.0.0] (2020-11-29)
 
 ### Added
 
 - Introduced `eslint-plugin-node` as a new optional plugin dependency.
 - Introduced new rule configurations for writing Node applications: `protect-me-from-my-stupidity/and/from-writing-stupid-node-applications` and `protect-me-from-my-stupidity/but/let-my-node-applications-look-stupid`.
-- Switch the `no-nonoctal-decimal-escape` rule on to prohibit the use of non-octal decimal escape sequences.
+- Switched the `no-nonoctal-decimal-escape` rule on to prohibit the use of non-octal decimal escape sequences.
 
 ### Changed
 

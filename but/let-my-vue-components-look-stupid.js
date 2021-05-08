@@ -62,6 +62,8 @@ module.exports =
 		"vue/html-comment-indent"                       : "off",
 		"vue/space-in-parens"                           : "off",
 		"vue/template-curly-spacing"                    : "off",
-		"vue/v-for-delimiter-style"                     : "off"
+		"vue/v-for-delimiter-style"                     : "off",
+		"vue/new-line-between-multi-line-property"      : "off",
+		"vue/v-on-event-hyphenation"                    : "off"
 	}
 };

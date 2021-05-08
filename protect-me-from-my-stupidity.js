@@ -278,6 +278,7 @@ module.exports =
 		"no-promise-executor-return"         : "error",
 		"no-unreachable-loop"                : "error",
 		"no-nonoctal-decimal-escape"         : "error",
+		"no-unsafe-optional-chaining"        : ["error", { "disallowArithmeticOperators" : true }],
 		"import/default"                     : "error",
 		"import/dynamic-import-chunkname"    : "off",
 		"import/export"                      : "error",
