@@ -2,6 +2,12 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [7.1.2] (2021-05-11)
+
+### Changed
+
+- Switched the `node/no-unsupported-features/es-builtins`, `node/no-unsupported-features/es-syntax` and `node/no-unsupported-features/node-builtins` rules off.
+
 ## [7.1.1] (2021-05-11)
 
 ### Fixed
