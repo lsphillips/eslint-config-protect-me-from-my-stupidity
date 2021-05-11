@@ -10,6 +10,18 @@ module.exports =
 		"sourceType"  : "module"
 	},
 
+	"overrides" :
+	[
+		{
+			"files" : "**/*.js",
+
+			"parserOptions" :
+			{
+				"sourceType" : "script"
+			}
+		}
+	],
+
 	"plugins" :
 	[
 		"import",

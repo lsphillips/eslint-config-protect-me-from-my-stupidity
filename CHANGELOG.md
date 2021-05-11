@@ -2,6 +2,12 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [7.1.0] (2021-05-11)
+
+### Added
+
+- Introduced an override that ensures files with the `.cjs` extension are not treated as ES modules.
+
 ## [7.0.0] (2021-05-08)
 
 ### Added

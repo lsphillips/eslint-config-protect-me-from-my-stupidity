@@ -1,7 +1,7 @@
 {
     "name" : "eslint-config-protect-me-from-my-stupidity",
 
-    "version" : "7.0.0",
+    "version" : "7.1.0",
 
     "description" : "An opinionated ESLint configuration that shall protect you from your stupidity when writing JavaScript.",
 

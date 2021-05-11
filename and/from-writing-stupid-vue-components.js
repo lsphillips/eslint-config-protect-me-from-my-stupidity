@@ -196,7 +196,7 @@ module.exports =
 	"overrides" :
 	[
 		{
-			"files" : ["*.vue"],
+			"files" : ["**/*.vue"],
 
 			"rules" :
 			{
