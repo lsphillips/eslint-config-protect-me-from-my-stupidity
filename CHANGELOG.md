@@ -2,6 +2,12 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [7.2.0] (2021-05-15)
+
+### Changed
+
+- All configuration sets are now explicit module entry points.
+
 ## [7.1.2] (2021-05-11)
 
 ### Changed
