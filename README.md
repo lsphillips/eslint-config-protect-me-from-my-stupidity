@@ -1,6 +1,7 @@
 # Protect Me From My Stupidity
 
 [![Available from NPM](https://img.shields.io/npm/v/eslint-config-protect-me-from-my-stupidity.svg?maxAge=900)](https://www.npmjs.com/package/eslint-config-protect-me-from-my-stupidity)
+[![Built using Travis](https://img.shields.io/travis/com/lsphillips/ProtectMeFromMyStupidity/master.svg?maxAge=900)](https://travis-ci.com/lsphillips/ProtectMeFromMyStupidity)
 
 An opinionated configuration for ESLint that shall protect you from your stupidity when writing JavaScript.
 
