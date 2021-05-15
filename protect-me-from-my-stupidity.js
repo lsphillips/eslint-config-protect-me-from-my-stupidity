@@ -18,6 +18,11 @@ module.exports =
 			"parserOptions" :
 			{
 				"sourceType" : "script"
+			},
+
+			"env" :
+			{
+				"commonjs" : true
 			}
 		}
 	],
