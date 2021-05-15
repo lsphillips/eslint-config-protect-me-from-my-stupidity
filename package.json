@@ -70,7 +70,7 @@
 
     "scripts" :
     {
-        "test:lint" : "eslint \"**/*.js\"",
+        "test:lint" : "eslint \"**/*.js\" --ignore-path .gitignore",
         "test:validate" : "node validate.js",
         "test" : "npm run test:lint && npm run test:validate",
         "prepack" : "npm run test"
