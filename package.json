@@ -3,6 +3,8 @@
 
     "version" : "7.2.1",
 
+    "type" : "commonjs",
+
     "description" : "An opinionated ESLint configuration that shall protect you from your stupidity when writing JavaScript.",
 
     "author" :
