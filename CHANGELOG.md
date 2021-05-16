@@ -2,6 +2,12 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [7.2.2] (2021-05-16)
+
+### Changed
+
+- Removed unnecessary files from the package making it more lightweight.
+
 ## [7.2.1] (2021-05-15)
 
 ### Changed

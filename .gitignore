@@ -1,4 +1,9 @@
-# NPM
+# Dependencies
 # -----------------
 
 /node_modules
+
+# Pack
+# -----------------
+
+*.tgz

@@ -1,7 +1,7 @@
 {
     "name" : "eslint-config-protect-me-from-my-stupidity",
 
-    "version" : "7.2.1",
+    "version" : "7.2.2",
 
     "type" : "commonjs",
 
@@ -39,13 +39,19 @@
     "exports" :
     {
         "." : "./protect-me-from-my-stupidity.js",
-        "./and/from-writing-stupid-node-applications" : "./and/from-writing-stupid-node-applications.js",
-        "./and/from-writing-stupid-vue-components" : "./and/from-writing-stupid-vue-components.js",
-        "./but/let-me-write-stupid-tests" : "./but/let-me-write-stupid-tests.js",
-        "./but/let-my-code-look-stupid" : "./but/let-my-code-look-stupid.js",
-        "./but/let-my-node-applications-look-stupid" : "./but/let-my-node-applications-look-stupid.js",
-        "./but/let-my-vue-components-look-stupid" : "./but/let-my-vue-components-look-stupid.js"
+        "./and/*" : "./and/*.js",
+        "./but/*" : "./but/*.js"
     },
+
+    "files" :
+    [
+        "/README.md",
+        "/CHANGELOG.md",
+        "/LICENSE.txt",
+        "/protect-me-from-my-stupidity.js",
+        "/and",
+        "/but"
+    ],
 
     "peerDependencies" :
     {
