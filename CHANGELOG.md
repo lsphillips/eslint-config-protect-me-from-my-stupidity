@@ -6,7 +6,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ### Changed
 
-- Updated the ECMAScript version to 13 (2022).
+- Updated the ECMAScript version to `13` (2022).
 - Updated the minimum required `eslint` version to `8.5.0`.
 - Updated the minimum required `eslint-plugin-import` version to `5.25.3`.
 - Updated the minimum required `eslint-plugin-promise` version to `6.0.0`.
