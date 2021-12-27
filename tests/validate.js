@@ -2,88 +2,62 @@
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-const table                                                = require('text-table');
-const { red, green }                                       = require('colors');
-const { getCoreRules, getPluginRules, getConfiguredRules } = require('./support/rule-loader');
+const table                                                              = require('text-table');
+const { red, green }                                                     = require('colors');
+const { getLoadedRules, getConfiguredRules }                             = require('./support/rule-loader.js');
+const { getUnrecognizedRules, getDeprecatedRules, getUnconfiguredRules } = require('./support/rule-finder.js');
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-async function getLoadedRules (plugins, usingCore = true)
+async function output ({
+	name, problems
+})
 {
-	const rules = usingCore ? [...(
-		await getCoreRules()
-	)] : [];
+	const status = problems.length > 0
+		? red('✘')
+		: green('✓');
 
-	for (const plugin of plugins)
+	console.log(status, name, '\n');
+
+	if (problems.length > 0)
 	{
-		rules.push(...(
-			await getPluginRules(plugin)
-		));
+		console.log(table(problems), '\n');
 	}
-
-	return rules;
-}
-
-function isRuleDeprecated (rule)
-{
-	return rule.meta?.deprecated;
-}
-
-function getUnrecognizedRules (loaded, configured)
-{
-	const allowed = loaded
-		.map(rule => rule.name);
-
-	return configured.filter(rule => !allowed.includes(rule));
-}
-
-function getDeprecatedRules (loaded, configured)
-{
-	return loaded
-		.filter(rule => isRuleDeprecated(rule) && configured.includes(rule.name))
-		.map(rule => rule.name);
-}
-
-function getUnconfiguredRules (loaded, configured)
-{
-	return loaded
-		.filter(rule => !isRuleDeprecated(rule) && !configured.includes(rule.name))
-		.map(rule => rule.name);
 }
 
 async function test ({
-	config, all = false, core = false, plugins = []
+	name, includeAllRules = false, usingCore = false, plugins = []
 })
 {
-	const loaded     = await getLoadedRules(plugins, core);
-	const configured = await getConfiguredRules(`eslint-config-${config}`);
+	const config = await getConfiguredRules(`eslint-config-${name}`);
 
-	const problems = [
-		...getUnrecognizedRules(loaded, configured).map(rule => [
+	const loaded = await getLoadedRules({
+		plugins, usingCore
+	});
+
+	const problems =
+	[
+		...getUnrecognizedRules(config, loaded).map(rule => [
 			rule, 'Rule is not recognized.'
 		]),
-		...getDeprecatedRules(loaded, configured).map(rule => [
+
+		...getDeprecatedRules(config, loaded).map(rule => [
 			rule, 'Rule is now deprecated.'
 		])
 	];
 
-	if (all)
+	if (includeAllRules)
 	{
-		problems.push(...getUnconfiguredRules(loaded, configured).map(rule => [
+		problems.push(...getUnconfiguredRules(config, loaded).map(rule => [
 			rule, 'Rule is loaded, but is not configured.'
 		]));
 	}
 
-	if (problems.length > 0)
-	{
-		console.log(red('✘'), config, '\n\n', table(problems), '\n');
+	await output({
+		name, problems
+	});
 
-		return false;
-	}
-
-	console.log(green('✓'), config, '\n\n');
-
-	return true;
+	return problems.length === 0;
 }
 
 async function validate (configurations)
@@ -95,55 +69,53 @@ async function validate (configurations)
 		passed = await test(configuration) && passed;
 	}
 
-	process.exit( // eslint-disable-line no-process-exit
-		passed ? 0 : -1
-	);
+	process.exit(passed ? 0 : -1); // eslint-disable-line no-process-exit
 }
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
 validate([
 	{
-		config  : 'protect-me-from-my-stupidity',
-		all     : true,
-		core    : true,
-		plugins : ['promise', 'import']
+		name            : 'protect-me-from-my-stupidity',
+		includeAllRules : true,
+		usingCore       : true,
+		plugins         : ['promise', 'import']
 	},
 	{
-		config  : 'protect-me-from-my-stupidity/but/let-me-write-stupid-tests',
-		all     : false,
-		core    : true,
-		plugins : ['promise', 'import']
+		name            : 'protect-me-from-my-stupidity/but/let-me-write-stupid-tests',
+		includeAllRules : false,
+		usingCore       : true,
+		plugins         : ['promise', 'import']
 	},
 	{
-		config  : 'protect-me-from-my-stupidity/but/let-my-code-look-stupid',
-		all     : false,
-		core    : true,
-		plugins : ['promise', 'import']
+		name            : 'protect-me-from-my-stupidity/but/let-my-code-look-stupid',
+		includeAllRules : false,
+		usingCore       : true,
+		plugins         : ['promise', 'import']
 	},
 	{
-		config  : 'protect-me-from-my-stupidity/and/from-writing-stupid-node-applications',
-		all     : true,
-		core    : false,
-		plugins : ['node']
+		name            : 'protect-me-from-my-stupidity/and/from-writing-stupid-node-applications',
+		includeAllRules : true,
+		usingCore       : false,
+		plugins         : ['node']
 	},
 	{
-		config  : 'protect-me-from-my-stupidity/but/let-my-node-applications-look-stupid',
-		all     : false,
-		core    : false,
-		plugins : ['node']
+		name            : 'protect-me-from-my-stupidity/but/let-my-node-applications-look-stupid',
+		includeAllRules : false,
+		usingCore       : false,
+		plugins         : ['node']
 	},
 	{
-		config  : 'protect-me-from-my-stupidity/and/from-writing-stupid-vue-components',
-		all     : true,
-		core    : false,
-		plugins : ['vue']
+		name            : 'protect-me-from-my-stupidity/and/from-writing-stupid-vue-components',
+		includeAllRules : true,
+		usingCore       : false,
+		plugins         : ['vue']
 	},
 	{
-		config  : 'protect-me-from-my-stupidity/but/let-my-vue-components-look-stupid',
-		all     : false,
-		core    : false,
-		plugins : ['vue']
+		name            : 'protect-me-from-my-stupidity/but/let-my-vue-components-look-stupid',
+		includeAllRules : false,
+		usingCore       : false,
+		plugins         : ['vue']
 	}
 ])
 	.catch(error =>

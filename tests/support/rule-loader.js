@@ -56,6 +56,24 @@ async function getConfiguredRules (config)
 	return Object.keys(rules);
 }
 
+async function getLoadedRules ({
+	plugins = [], usingCore = true
+})
+{
+	const rules = usingCore ? [...(
+		await getCoreRules()
+	)] : [];
+
+	for (const plugin of plugins)
+	{
+		rules.push(...(
+			await getPluginRules(plugin)
+		));
+	}
+
+	return rules;
+}
+
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-module.exports = { getCoreRules, getPluginRules, getConfiguredRules };
+module.exports = { getConfiguredRules, getLoadedRules };

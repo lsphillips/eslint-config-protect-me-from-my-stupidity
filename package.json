@@ -75,8 +75,8 @@
     {
         "test:lint" : "eslint \"**/*.js\" --ignore-path .gitignore",
         "test:validate" : "node tests/validate.js",
-        "test" : "npm run test:lint && npm run test:validate",
-        "prepack" : "npm run test"
+        "test" : "npm run test:validate && npm run test:lint",
+        "prepack" : "npm test"
     },
 
     "license" : "UNLICENSED"
