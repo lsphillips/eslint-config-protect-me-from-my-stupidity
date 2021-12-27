@@ -2,28 +2,11 @@
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-const table                                                              = require('text-table');
-const { red, green }                                                     = require('colors');
 const { getLoadedRules, getConfiguredRules }                             = require('./support/rule-loader.js');
 const { getUnrecognizedRules, getDeprecatedRules, getUnconfiguredRules } = require('./support/rule-finder.js');
+const { print }                                                          = require('./support/test-result-printer.js');
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-async function output ({
-	name, problems
-})
-{
-	const status = problems.length > 0
-		? red('✘')
-		: green('✓');
-
-	console.log(status, name, '\n');
-
-	if (problems.length > 0)
-	{
-		console.log(table(problems), '\n');
-	}
-}
 
 async function test ({
 	name, includeAllRules = false, usingCore = false, plugins = []
@@ -53,10 +36,9 @@ async function test ({
 		]));
 	}
 
-	await output({
-		name, problems
-	});
+	await print(name, problems);
 
+	// Passed?
 	return problems.length === 0;
 }
 
