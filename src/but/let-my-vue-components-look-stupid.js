@@ -64,6 +64,12 @@ module.exports =
 		"vue/template-curly-spacing"                    : "off",
 		"vue/v-for-delimiter-style"                     : "off",
 		"vue/new-line-between-multi-line-property"      : "off",
-		"vue/v-on-event-hyphenation"                    : "off"
+		"vue/v-on-event-hyphenation"                    : "off",
+		"vue/component-api-style"                       : "off",
+		"vue/component-options-name-casing"             : "off",
+		"vue/first-attribute-linebreak"                 : "off",
+		"vue/multi-word-component-names"                : "off",
+		"vue/no-v-text"                                 : "off",
+		"vue/prefer-separate-static-class"              : "off"
 	}
 };

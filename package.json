@@ -1,7 +1,7 @@
 {
     "name" : "eslint-config-protect-me-from-my-stupidity",
 
-    "version" : "7.2.2",
+    "version" : "8.0.0",
 
     "type" : "commonjs",
 
@@ -38,35 +38,33 @@
 
     "exports" :
     {
-        "." : "./protect-me-from-my-stupidity.js",
-        "./and/*" : "./and/*.js",
-        "./but/*" : "./but/*.js"
+        "." : "./src/protect-me-from-my-stupidity.js",
+        "./and/*" : "./src/and/*.js",
+        "./but/*" : "./src/but/*.js"
     },
 
     "files" :
     [
         "/README.md",
         "/CHANGELOG.md",
-        "/protect-me-from-my-stupidity.js",
-        "/and",
-        "/but"
+        "/src"
     ],
 
     "peerDependencies" :
     {
-        "eslint" : "^7.26.0",
-        "eslint-plugin-import" : "^2.22.1",
-        "eslint-plugin-promise" : "^5.1.0",
-        "eslint-plugin-vue" : "^7.9.0",
+        "eslint" : "^8.5.0",
+        "eslint-plugin-import" : "^2.25.3",
+        "eslint-plugin-promise" : "^6.0.0",
+        "eslint-plugin-vue" : "^8.2.0",
         "eslint-plugin-node" : "^11.1.0"
     },
 
     "devDependencies" :
     {
-        "eslint" : "7.26.0",
-        "eslint-plugin-import" : "2.22.1",
-        "eslint-plugin-promise" : "5.1.0",
-        "eslint-plugin-vue" : "7.9.0",
+        "eslint" : "8.5.0",
+        "eslint-plugin-import" : "2.25.3",
+        "eslint-plugin-promise" : "6.0.0",
+        "eslint-plugin-vue" : "8.2.0",
         "eslint-plugin-node" : "11.1.0",
         "eslint-config-protect-me-from-my-stupidity" : "file:.",
         "text-table" : "0.2.0",
@@ -76,7 +74,7 @@
     "scripts" :
     {
         "test:lint" : "eslint \"**/*.js\" --ignore-path .gitignore",
-        "test:validate" : "node validate.js",
+        "test:validate" : "node tests/validate.js",
         "test" : "npm run test:lint && npm run test:validate",
         "prepack" : "npm run test"
     },

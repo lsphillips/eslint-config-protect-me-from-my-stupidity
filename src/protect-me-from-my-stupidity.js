@@ -6,7 +6,7 @@ module.exports =
 {
 	"parserOptions" :
 	{
-		"ecmaVersion" : 12,
+		"ecmaVersion" : 13,
 		"sourceType"  : "module"
 	},
 
@@ -296,7 +296,9 @@ module.exports =
 		"no-unreachable-loop"                : "error",
 		"no-nonoctal-decimal-escape"         : "error",
 		"no-unsafe-optional-chaining"        : ["error", { "disallowArithmeticOperators" : true }],
-		"import/default"                     : "error",
+		"no-unused-private-class-members"    : "error",
+		"prefer-object-has-own"              : "error",
+		"import/default"                     : "off",
 		"import/dynamic-import-chunkname"    : "off",
 		"import/export"                      : "error",
 		"import/exports-last"                : "off",
@@ -336,6 +338,8 @@ module.exports =
 		"import/prefer-default-export"       : "off",
 		"import/unambiguous"                 : "off",
 		"import/no-unused-modules"           : "off",
+		"import/no-relative-packages"        : "off",
+		"import/no-import-module-exports"    : "error",
 		"promise/catch-or-return"            : "error",
 		"promise/no-return-wrap"             : "error",
 		"promise/param-names"                : "error",

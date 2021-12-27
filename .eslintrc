@@ -16,7 +16,7 @@
 	"overrides" :
 	[
 		{
-			"files" : ["protect-me-from-my-stupidity.js", "and/**/*.js", "but/**/*.js"],
+			"files" : ["src/**/*.js"],
 
 			"rules" :
 			{

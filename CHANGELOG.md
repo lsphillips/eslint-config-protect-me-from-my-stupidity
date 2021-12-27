@@ -2,6 +2,39 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [8.0.0] (2021-12-27)
+
+### Changed
+
+- Updated the minimum required `eslint` version to `8.5.0`.
+- Updated the minimum required `eslint-plugin-import` version to `5.25.3`.
+- Updated the minimum required `eslint-plugin-promise` version to `6.0.0`.
+- Updated the minimum required `eslint-plugin-vue` version to `8.2.0`.
+- The `no-loss-of-precision` rule is now applied to expressions in component templates.
+- The `no-unused-vars` rule now correctly detects usage of setup script variables in component templates.
+- Switched the `import/default` rule off as it was resuling in too many false positives with a lot of packages.
+
+### Added
+
+- Switched the `no-unused-private-class-members` rule on to ensure all private class properties are not left unused.
+- Switched the `prefer-object-has-own` rule on to ensure `Object.hasOwn()` is used instead of `Object.prototype.hasOwnProperty.call()`.
+- Switched the `import/no-import-module-exports` rule on to prevent mixing import declarations with CommonJS exports.
+- Switched the `vue/block-lang` rule on to ensure script languages are configured explicitly to `js`.
+- Switched the `vue/component-api-style` rule on to only allow the Composition and Options API.
+- Switched the `vue/component-options-name-casing` rule on to ensure all components are referenced using kebab-case.
+- Switched the `vue/no-child-content` rule on to prevent a component's content is not overwritten by content modifying attributes.
+- Switched the `vue/no-computed-properties-in-data` rule on to prevent the use of computed properties during component data initialization.
+- Switched the `vue/no-export-in-script-setup` rule on to prevent setup scripts from exporting.
+- Switched the `vue/no-expose-after-await` rule on to ensure all properties are exposed synchronously.
+- Switched the `vue/no-reserved-props` rule on to prevent props being defined with names reserved by Vue.
+- Switched the `vue/no-this-in-before-route-enter` rule on to prevent the use of `this` in the `beforeRouteEnter` router guard.
+- Switched the `vue/no-undef-properties` rule on to prevent the use of props that are not explicitly defined.
+- Switched the `vue/no-use-computed-property-like-method` rule on to ensure computed properties are not used as functions.
+- Switched the `vue/no-v-text` rule on to prevent the use of the `v-text` attribute.
+- Switched the `vue/prefer-separate-static-class` rule on to ensure static classes and dynamic classes are assigned using separate `class` attributes.
+- Switched the `vue/valid-define-emits` and `vue/valid-define-props` rules on to ensure all `defineEmits` and `defineProps` compiler macros are valid.
+- Switched the `vue/valid-v-memo` rule on to ensure all `v-memo` directives are valid.
+
 ## [7.2.2] (2021-05-16)
 
 ### Changed

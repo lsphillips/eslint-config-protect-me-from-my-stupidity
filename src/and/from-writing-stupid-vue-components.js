@@ -2,7 +2,7 @@
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-const { rules } = require("../protect-me-from-my-stupidity");
+const { rules } = require("../protect-me-from-my-stupidity.js");
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -117,7 +117,6 @@ module.exports =
 		"vue/comma-style"                               : rules["comma-style"],
 		"vue/custom-event-name-casing"                  : "error",
 		"vue/dot-notation"                              : rules["dot-notation"],
-		"vue/experimental-script-setup-vars"            : "error",
 		"vue/func-call-spacing"                         : rules["func-call-spacing"],
 		"vue/html-comment-content-newline"              : ["error", { "singleline" : "never", "multiline" : "always" }],
 		"vue/html-comment-content-spacing"              : "error",
@@ -190,7 +189,33 @@ module.exports =
 		"vue/no-restricted-props"                       : "off",
 		"vue/no-unused-refs"                            : "error",
 		"vue/v-on-event-hyphenation"                    : ["error", "always", { "autofix" : false }],
-		"vue/valid-next-tick"                           : "error"
+		"vue/valid-next-tick"                           : "error",
+		"vue/block-lang"                                : ["error", { "lang" : "js" }],
+		"vue/component-api-style"                       : ["error", ["composition", "options"]],
+		"vue/component-options-name-casing"             : ["error", "kebab-case"],
+		"vue/first-attribute-linebreak"                 : "off",
+		"vue/multi-word-component-names"                : "off",
+		"vue/no-child-content"                          : "error",
+		"vue/no-computed-properties-in-data"            : "error",
+		"vue/no-deprecated-router-link-tag-prop"        : "off",
+		"vue/no-deprecated-v-is"                        : "off",
+		"vue/no-export-in-script-setup"                 : "error",
+		"vue/no-expose-after-await"                     : "error",
+		"vue/no-loss-of-precision"                      : rules["no-loss-of-precision"],
+		"vue/no-reserved-props"                         : "error",
+		"vue/no-restricted-class"                       : "off",
+		"vue/no-this-in-before-route-enter"             : "error",
+		"vue/no-undef-properties"                       : "error",
+		"vue/no-use-computed-property-like-method"      : "error",
+		"vue/no-useless-template-attributes"            : "error",
+		"vue/no-v-text"                                 : "error",
+		"vue/prefer-separate-static-class"              : "error",
+		"vue/require-emit-validator"                    : "off",
+		"vue/require-expose"                            : "off",
+		"vue/script-setup-uses-vars"                    : rules["no-unused-vars"],
+		"vue/valid-define-emits"                        : "error",
+		"vue/valid-define-props"                        : "error",
+		"vue/valid-v-memo"                              : "error"
 	},
 
 	"overrides" :
