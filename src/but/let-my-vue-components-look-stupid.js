@@ -70,6 +70,7 @@ module.exports =
 		"vue/first-attribute-linebreak"                 : "off",
 		"vue/multi-word-component-names"                : "off",
 		"vue/no-v-text"                                 : "off",
-		"vue/prefer-separate-static-class"              : "off"
+		"vue/prefer-separate-static-class"              : "off",
+		"vue/prefer-true-attribute-shorthand"           : "off"
 	}
 };

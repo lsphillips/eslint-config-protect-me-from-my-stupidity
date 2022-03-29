@@ -39,7 +39,7 @@ module.exports =
 		"getter-return"                      : "error",
 		"no-await-in-loop"                   : "off",
 		"no-compare-neg-zero"                : "error",
-		"no-cond-assign"                     : "error",
+		"no-cond-assign"                     : "off",
 		"no-console"                         : "off",
 		"no-constant-condition"              : "error",
 		"no-control-regex"                   : "warn",
@@ -176,7 +176,7 @@ module.exports =
 		"keyword-spacing"                    : "error",
 		"linebreak-style"                    : "off",
 		"lines-around-comment"               : "off",
-		"lines-between-class-members"        : "error",
+		"lines-between-class-members"        : ["error", "always", { "exceptAfterSingleLine" : true }],
 		"max-depth"                          : ["error", 3],
 		"max-len"                            : "off",
 		"max-lines"                          : "off",
@@ -352,7 +352,7 @@ module.exports =
 		"promise/no-new-statics"             : "error",
 		"promise/no-return-in-finally"       : "error",
 		"promise/valid-params"               : "error",
-		"promise/prefer-await-to-then"       : "error",
+		"promise/prefer-await-to-then"       : "off",
 		"promise/prefer-await-to-callbacks"  : "off"
 	}
 };

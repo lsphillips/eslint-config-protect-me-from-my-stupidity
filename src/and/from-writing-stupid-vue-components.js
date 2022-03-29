@@ -156,7 +156,6 @@ module.exports =
 		"vue/no-setup-props-destructure"                : "error",
 		"vue/no-sparse-arrays"                          : rules["no-sparse-arrays"],
 		"vue/no-template-target-blank"                  : "error",
-		"vue/no-unregistered-components"                : "off",
 		"vue/no-unused-properties"                      : ["error", { "groups" : ["props", "data", "computed", "methods"] }],
 		"vue/no-useless-concat"                         : rules["no-useless-concat"],
 		"vue/no-useless-mustaches"                      : "error",
@@ -215,7 +214,13 @@ module.exports =
 		"vue/script-setup-uses-vars"                    : rules["no-unused-vars"],
 		"vue/valid-define-emits"                        : "error",
 		"vue/valid-define-props"                        : "error",
-		"vue/valid-v-memo"                              : "error"
+		"vue/valid-v-memo"                              : "error",
+		"vue/no-undef-components"                       : "off",
+		"vue/no-v-text-v-html-on-component"             : "error",
+		"vue/object-shorthand"                          : rules["object-shorthand"],
+		"vue/prefer-import-from-vue"                    : "error",
+		"vue/prefer-true-attribute-shorthand"           : "error",
+		"vue/quote-props"                               : rules["quote-props"]
 	},
 
 	"overrides" :

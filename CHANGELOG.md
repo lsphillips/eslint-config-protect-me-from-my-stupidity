@@ -2,6 +2,19 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [8.1.0] (2022-03-29)
+
+### Changes
+
+- Updated the minimum required `eslint` version to `8.12.0`.
+- Updated the minimum required `eslint-plugin-vue` version to `8.5.0`.
+- Updated the minimum required `eslint-plugin-import` version to `2.25.4`.
+- Switched the `no-cond-assign`, `promise/prefer-await-to-then` and `vue/no-undef-components` rules off.
+- The `lines-between-class-members` rule is no longer applied to single lines.
+- Switched the `vue/prefer-import-from-vue` rule on to ensure all imports come from the `vue` module.
+- Switched the `vue/prefer-true-attribute-shorthand` rule on to prefer boolean attribute shorthands. This is switched off in the `protect-me-from-my-stupidity/but/let-my-vue-components-look-stupid` configuration.
+- Switched the `vue/object-shorthand` and `vue/quote-props` rules on to enforce their base `eslint` counterpart in template expressions.
+
 ## [8.0.0] (2021-12-27)
 
 ### Changed

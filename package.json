@@ -1,7 +1,7 @@
 {
     "name" : "eslint-config-protect-me-from-my-stupidity",
 
-    "version" : "8.0.0",
+    "version" : "8.1.0",
 
     "type" : "commonjs",
 
@@ -52,19 +52,19 @@
 
     "peerDependencies" :
     {
-        "eslint" : "^8.5.0",
-        "eslint-plugin-import" : "^2.25.3",
+        "eslint" : "^8.12.0",
+        "eslint-plugin-import" : "^2.25.4",
         "eslint-plugin-promise" : "^6.0.0",
-        "eslint-plugin-vue" : "^8.2.0",
+        "eslint-plugin-vue" : "^8.5.0",
         "eslint-plugin-node" : "^11.1.0"
     },
 
     "devDependencies" :
     {
-        "eslint" : "8.5.0",
-        "eslint-plugin-import" : "2.25.3",
+        "eslint" : "8.12.0",
+        "eslint-plugin-import" : "2.25.4",
         "eslint-plugin-promise" : "6.0.0",
-        "eslint-plugin-vue" : "8.2.0",
+        "eslint-plugin-vue" : "8.5.0",
         "eslint-plugin-node" : "11.1.0",
         "eslint-config-protect-me-from-my-stupidity" : "file:.",
         "text-table" : "0.2.0",
