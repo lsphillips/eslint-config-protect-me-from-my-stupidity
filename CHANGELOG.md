@@ -2,6 +2,12 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [8.1.1] (2022-04-20)
+
+### Changes
+
+- Updated the `indent` rule to not be enforced in string literals.
+
 ## [8.1.0] (2022-03-29)
 
 ### Changes

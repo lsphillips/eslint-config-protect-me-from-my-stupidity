@@ -170,7 +170,7 @@ module.exports =
 		"id-length"                          : "off",
 		"id-match"                           : "off",
 		"implicit-arrow-linebreak"           : "off",
-		"indent"                             : ["error", "tab", { "SwitchCase" : 1 }],
+		"indent"                             : ["error", "tab", { "SwitchCase" : 1, "ignoredNodes" : ["TemplateLiteral *"] }],
 		"jsx-quotes"                         : "error",
 		"key-spacing"                        : ["error", { "beforeColon" : true, "afterColon" : true, "mode" : "minimum" }],
 		"keyword-spacing"                    : "error",
