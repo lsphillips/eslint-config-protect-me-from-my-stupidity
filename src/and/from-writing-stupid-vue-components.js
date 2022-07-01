@@ -181,7 +181,6 @@ module.exports =
 		"vue/new-line-between-multi-line-property"      : "error",
 		"vue/next-tick-style"                           : ["error", "promise"],
 		"vue/no-constant-condition"                     : rules["no-constant-condition"],
-		"vue/no-invalid-model-keys"                     : "error",
 		"vue/no-restricted-block"                       : "off",
 		"vue/no-restricted-call-after-await"            : "off",
 		"vue/no-restricted-custom-event"                : "off",
@@ -211,7 +210,6 @@ module.exports =
 		"vue/prefer-separate-static-class"              : "error",
 		"vue/require-emit-validator"                    : "off",
 		"vue/require-expose"                            : "off",
-		"vue/script-setup-uses-vars"                    : rules["no-unused-vars"],
 		"vue/valid-define-emits"                        : "error",
 		"vue/valid-define-props"                        : "error",
 		"vue/valid-v-memo"                              : "error",
@@ -220,7 +218,13 @@ module.exports =
 		"vue/object-shorthand"                          : rules["object-shorthand"],
 		"vue/prefer-import-from-vue"                    : "error",
 		"vue/prefer-true-attribute-shorthand"           : "error",
-		"vue/quote-props"                               : rules["quote-props"]
+		"vue/quote-props"                               : rules["quote-props"],
+		"vue/match-component-import-name"               : "error",
+		"vue/define-macros-order"                       : "off",
+		"vue/no-restricted-html-elements"               : "off",
+		"vue/prefer-prop-type-boolean-first"            : "off",
+		"vue/valid-attribute-name"                      : "error",
+		"vue/valid-model-definition"                    : "error"
 	},
 
 	"overrides" :

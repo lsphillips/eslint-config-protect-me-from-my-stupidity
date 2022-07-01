@@ -298,6 +298,7 @@ module.exports =
 		"no-unsafe-optional-chaining"        : ["error", { "disallowArithmeticOperators" : true }],
 		"no-unused-private-class-members"    : "error",
 		"prefer-object-has-own"              : "error",
+		"no-constant-binary-expression"      : "error",
 		"import/default"                     : "off",
 		"import/dynamic-import-chunkname"    : "off",
 		"import/export"                      : "error",

@@ -71,6 +71,7 @@ module.exports =
 		"vue/multi-word-component-names"                : "off",
 		"vue/no-v-text"                                 : "off",
 		"vue/prefer-separate-static-class"              : "off",
-		"vue/prefer-true-attribute-shorthand"           : "off"
+		"vue/prefer-true-attribute-shorthand"           : "off",
+		"vue/prefer-prop-type-boolean-first"            : "off"
 	}
 };

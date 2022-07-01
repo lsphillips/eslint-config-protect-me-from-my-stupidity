@@ -2,6 +2,22 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## [9.0.0] (2022-06-31)
+
+### Changes
+
+- Updated the minimum required `eslint` version to `8.18.0`.
+- Updated the minimum required `eslint-plugin-import` version to `8.26.0`.
+- Updated the minimum required `eslint-plugin-vue` version to `9.1.1`.
+- Switched the `no-constant-binary-expression` rule on; disallowing expressions where the operator doesn't affect the value.
+- Switched the `vue/define-macros-order`, `vue/no-restricted-html-elements` and `vue/prefer-prop-type-boolean-first` rules off.
+- Switched the `vue/match-component-import-name` rule on; ensuring that the component registration matches the component import name.
+- Switched the `vue/valid-attribute-name` and `vue/valid-model-definition` rules on; ensuring attribute names and model definitions are valid.
+
+### Removed
+
+- Removed configuration for the `vue/no-invalid-model-keys` and `vue/script-setup-uses-vars` rules, as they are now deprecated.
+
 ## [8.1.1] (2022-04-20)
 
 ### Changes
