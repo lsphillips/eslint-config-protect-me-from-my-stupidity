@@ -2,9 +2,9 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
-## [9.0.0] (2022-06-31)
+## 9.0.0 - 2022-06-31
 
-### Changes
+### Changed
 
 - Updated the minimum required `eslint` version to `8.18.0`.
 - Updated the minimum required `eslint-plugin-import` version to `8.26.0`.
@@ -18,15 +18,15 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Removed configuration for the `vue/no-invalid-model-keys` and `vue/script-setup-uses-vars` rules, as they are now deprecated.
 
-## [8.1.1] (2022-04-20)
+## 8.1.1 - 2022-04-20
 
-### Changes
+### Changed
 
 - Updated the `indent` rule to not be enforced in string literals.
 
-## [8.1.0] (2022-03-29)
+## 8.1.0 - 2022-03-29
 
-### Changes
+### Changed
 
 - Updated the minimum required `eslint` version to `8.12.0`.
 - Updated the minimum required `eslint-plugin-vue` version to `8.5.0`.
@@ -37,18 +37,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - Switched the `vue/prefer-true-attribute-shorthand` rule on to prefer boolean attribute shorthands. This is switched off in the `protect-me-from-my-stupidity/but/let-my-vue-components-look-stupid` configuration.
 - Switched the `vue/object-shorthand` and `vue/quote-props` rules on to enforce their base `eslint` counterpart in template expressions.
 
-## [8.0.0] (2021-12-27)
-
-### Changed
-
-- Updated the ECMAScript version to `13` (2022).
-- Updated the minimum required `eslint` version to `8.5.0`.
-- Updated the minimum required `eslint-plugin-import` version to `5.25.3`.
-- Updated the minimum required `eslint-plugin-promise` version to `6.0.0`.
-- Updated the minimum required `eslint-plugin-vue` version to `8.2.0`.
-- The `no-loss-of-precision` rule is now applied to expressions in Vue component templates.
-- The `no-unused-vars` rule now correctly detects usage of setup script variables in Vue component templates.
-- Switched the `import/default` rule off as it was resulting in too many false positives.
+## 8.0.0 - 2021-12-27
 
 ### Added
 
@@ -71,43 +60,54 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - Switched the `vue/valid-define-emits` and `vue/valid-define-props` rules on to ensure all `defineEmits` and `defineProps` compiler macros are valid.
 - Switched the `vue/valid-v-memo` rule on to ensure all `v-memo` directives are valid.
 
-## [7.2.2] (2021-05-16)
+### Changed
+
+- Updated the ECMAScript version to `13` (2022).
+- Updated the minimum required `eslint` version to `8.5.0`.
+- Updated the minimum required `eslint-plugin-import` version to `5.25.3`.
+- Updated the minimum required `eslint-plugin-promise` version to `6.0.0`.
+- Updated the minimum required `eslint-plugin-vue` version to `8.2.0`.
+- The `no-loss-of-precision` rule is now applied to expressions in Vue component templates.
+- The `no-unused-vars` rule now correctly detects usage of setup script variables in Vue component templates.
+- Switched the `import/default` rule off as it was resulting in too many false positives.
+
+## 7.2.2 - 2021-05-16
 
 ### Changed
 
 - Removed unnecessary files from the package making it more lightweight.
 
-## [7.2.1] (2021-05-15)
+## 7.2.1 - 2021-05-15
 
 ### Changed
 
 - Updated the `.cjs` file override to ensure the `commonjs` environment is enabled.
 
-## [7.2.0] (2021-05-15)
+## 7.2.0 - 2021-05-15
 
 ### Changed
 
 - All configuration sets are now explicit module entry points.
 
-## [7.1.2] (2021-05-11)
+## 7.1.2 - 2021-05-11
 
 ### Changed
 
 - Switched the `node/no-unsupported-features/es-builtins`, `node/no-unsupported-features/es-syntax` and `node/no-unsupported-features/node-builtins` rules off.
 
-## [7.1.1] (2021-05-11)
+## 7.1.1 - 2021-05-11
 
 ### Fixed
 
 - Fixed a misconfiguration where files with the `.js` extension are not treated as ES modules.
 
-## [7.1.0] (2021-05-11)
+## 7.1.0 - 2021-05-11
 
 ### Added
 
 - Introduced an override that ensures files with the `.cjs` extension are not treated as ES modules.
 
-## [7.0.0] (2021-05-08)
+## 7.0.0 - 2021-05-08
 
 ### Added
 
@@ -125,7 +125,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - Updated the minimum required `eslint-plugin-promise` version to `5.1.0`.
 - Updated the minimum required `eslint-plugin-vue` version to `7.9.0`.
 
-## [6.0.0] (2020-11-29)
+## 6.0.0 - 2020-11-29
 
 ### Added
 
@@ -146,13 +146,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - JSX is no longer enabled in the parser options.
 - Removed all Node.js related rules that were deprecated in ESLint v7.0.
 
-## [5.1.0] (2020-01-28)
+## 5.1.0 - 2020-01-28
 
 ### Changed
 
 - Stopped defining the parser in the `protect-me-from-my-stupidity/and/from-writing-stupid-vue-components` configuration.
 
-## [5.0.0] (2020-01-25)
+## 5.0.0 - 2020-01-25
 
 ### Added
 
@@ -182,7 +182,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Removed the `valid-jsdoc`, `no-catch-shadow` and `require-jsdoc` deprecated rules.
 
-## [4.0.0] (2019-09-02)
+## 4.0.0 - 2019-09-02
 
 ### Added
 
@@ -194,26 +194,26 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - Switched the `max-len` rule off.
 - Switched the `max-nested-callbacks` rule off in the `protect-me-from-my-stupidity/but-let-me-write-stupid-tests` configuration.
 
-## [3.2.0] (2019-04-27)
+## 3.2.0 - 2019-04-27
 
 ### Changed
 
 - Updated the `array-element-newline` rule to just enforce consistency.
 
-## [3.1.3] (2018-12-14)
+## 3.1.3 - 2018-12-14
 
 ### Changed
 
 - Switched the `import/no-anonymous-default-export` rule off.
 
-## [3.1.2] (2018-11-29)
+## 3.1.2 - 2018-11-29
 
 ### Changed
 
 - Updated the `strict` rule to only disallow strict mode directives when it is considered unsafe.
 - Strict mode is no longer implied in the parser options.
 
-## [3.1.1] (2018-10-29)
+## 3.1.1 - 2018-10-29
 
 ### Changed
 
@@ -224,14 +224,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
   4. All other modules.
 - Switched the `import/no-unassigned-import` rule off.
 
-## [3.1.0] (2018-10-29)
+## 3.1.0 - 2018-10-29
 
 ### Changed
 
 - Updated the `quote-props` rule to enforce consistency rather than necessity.
 - Switched the `linebreak-style` rule off.
 
-## [3.0.0] (2018-10-26)
+## 3.0.0 - 2018-10-26
 
 ### Added
 
@@ -263,32 +263,32 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Global strict mode is now enabled in the parser options.
 
-## [2.1.1] (2018-06-05)
+## 2.1.1 - 2018-06-05
 
 ### Changed
 
 - Switched the `callback-return`, `require-await`, `no-else-return` and `promise/no-native` rules off.
 
-## [2.1.0] (2018-04-16)
+## 2.1.0 - 2018-04-16
 
 ### Changed
 
 - Updated the `indent` rule to enforce indentation for `case` clauses inside `switch` statements.
 
-## [2.0.5] (2018-04-16)
+## 2.0.5 - 2018-04-16
 
 ### Changed
 
 - Switched the `operator-linebreak` rule off.
 
-## [2.0.4] (2018-02-03)
+## 2.0.4 - 2018-02-03
 
 ### Changed
 
 - Updated the `operator-linebreak` rule to allow line breaks before the operator.
 - Updated the `func-name-matching` rule to ignore `module.exports`.
 
-## [2.0.3] (2018-01-04)
+## 2.0.3 - 2018-01-04
 
 ### Changed
 
@@ -296,14 +296,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - Switched the `prefer-template` rule off.
 - Updated the `max-len` rule to allow lines to go up to 120 characters in length.
 
-## [2.0.2] (2018-01-02)
+## 2.0.2 - 2018-01-02
 
 ### Changed
 
 - Updated the `array-element-newline` rule to not apply to arrays with less than 5 elements.
 - Switched the `no-invalid-this` rule off in the `protect-me-from-my-stupidity/but-let-me-write-stupid-tests` configuration.
 
-## [2.0.1] (2017-12-27)
+## 2.0.1 - 2017-12-27
 
 ### Changed
 
@@ -313,7 +313,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 - Switched the `implicit-arrow-linebreak` rule off as it clashed with the `brace-style` rule.
 
-## [2.0.0] (2017-12-20)
+## 2.0.0 - 2017-12-20
 
 ### Added
 
@@ -324,7 +324,6 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 - `protect-me-from-my-stupidity/but-let-me-look-stupid` has been renamed to `protect-me-from-my-stupidity/but-let-my-code-look-stupid`.
 - The `max-depth` and `max-nested-callbacks` rules have both been lowered to **3**.
 - `protect-me-from-my-stupidity/but-let-my-code-look-stupid` to longer inherits from `protect-me-from-my-stupidity`. You will now have to extend both:
-
   ```json
   {
     "extends" : [
@@ -333,13 +332,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
     ]
   }
   ```
-
   The same applies to the `protect-me-from-my-stupidity/but-let-me-write-stupid-tests` configuration.
 
 ### Fixed
 
 - JSX is now enabled in the parser options.
 
-## [1.0.0] (2017-12-17)
+## 1.0.0 - 2017-12-17
 
 The initial public release.
