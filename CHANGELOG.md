@@ -2,6 +2,18 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## 9.1.0 - 2022-08-31
+
+### Changed
+
+- Updated the minimum required `eslint` version to `8.23.0`.
+- Updated the minimum required `eslint-plugin-promise` version to `6.0.1`.
+- Updated the minimum required `eslint-plugin-vue` version to `9.4.0`.
+
+### Fixed
+
+- Switched the `vue/block-lang` rule off.
+
 ## 9.0.0 - 2022-07-01
 
 ### Changed

@@ -188,7 +188,7 @@ module.exports =
 		"vue/no-unused-refs"                            : "error",
 		"vue/v-on-event-hyphenation"                    : ["error", "always", { "autofix" : false }],
 		"vue/valid-next-tick"                           : "error",
-		"vue/block-lang"                                : ["error", { "lang" : "js" }],
+		"vue/block-lang"                                : "off",
 		"vue/component-api-style"                       : ["error", ["composition", "options"]],
 		"vue/component-options-name-casing"             : ["error", "kebab-case"],
 		"vue/first-attribute-linebreak"                 : "off",
