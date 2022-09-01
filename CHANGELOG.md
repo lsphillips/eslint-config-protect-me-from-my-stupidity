@@ -2,6 +2,15 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## 9.1.1 - 2022-09-01
+
+### Changed
+
+- Switched the `no-eq-null` rule off.
+- Updated the `eqeqeq` rule to not apply in cases where it is not necessary, including `null`.
+- Switched the `vue/no-v-model-argument` rule off.
+- Updated the `vue/component-api-style` rule to only allow the use of the `options` API or the composition API in setup scripts.
+
 ## 9.1.0 - 2022-08-31
 
 ### Changed
