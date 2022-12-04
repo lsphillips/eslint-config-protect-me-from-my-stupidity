@@ -112,6 +112,7 @@ module.exports =
 		"unicode-bom"                        : "off",
 		"wrap-regex"                         : "off",
 		"function-call-argument-newline"     : "off",
+		"no-empty-static-block"              : "off",
 		"import/first"                       : "off",
 		"import/exports-last"                : "off",
 		"import/no-duplicates"               : "off",

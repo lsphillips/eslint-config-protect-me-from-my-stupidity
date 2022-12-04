@@ -2,6 +2,25 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## 9.2.0 - 2022-12-04
+
+### Added
+
+- Switched the `logical-assignment-operators` rule off.
+- Switched the `no-empty-static-block` rule on, but it is switched off in the `protect-me-from-my-stupidity/but/let-my-code-look-stupid` configuration.
+- Switched the `no-new-native-nonconstructor` rule on to ensure `Symbol` and `BigInt` instances are not being created using the `new` operator.
+- Switched the `promise/no-multiple-resolved` rule on to ensure there are no code paths that may lead to a promise being resolved multiple times.
+- Switched the `vue/define-emits-declaration` and `vue/define-emits-declaration` rules off.
+- Configured the `vue/multiline-ternary` rule to match the `multiline-ternary` rule.
+- Switched the `vue/no-ref-object-destructure` on to ensure you don't destructure reference objects that leads to losing reactivity.
+- Switched the `vue/no-required-prop-with-default` on to ensure that required props don't have a default value, as it's redundant.
+- Switched the `vue/padding-line-between-tags` and `vue/require-prop-comment` rules off.
+- Switched the `vue/v-on-handler-style` on to only allow the use of method handlers with inline handlers where applicable. This is switched off in the `protect-me-from-my-stupidity/but/let-my-code-look-stupid` configuration.
+
+### Removed
+
+- Removed configuration for the `vue/v-on-function-call` rule, as it's now deprecated.
+
 ## 9.1.1 - 2022-09-01
 
 ### Changed

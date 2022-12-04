@@ -94,7 +94,6 @@ module.exports =
 		"vue/script-indent"                             : ["error", "tab", { "baseIndent" : 1, "switchCase" : 1 }],
 		"vue/space-infix-ops"                           : rules["space-infix-ops"],
 		"vue/space-unary-ops"                           : rules["space-unary-ops"],
-		"vue/v-on-function-call"                        : "error",
 		"vue/v-slot-style"                              : "error",
 		"vue/valid-v-slot"                              : "error",
 		"vue/component-definition-name-casing"          : ["error", "kebab-case"],
@@ -224,7 +223,15 @@ module.exports =
 		"vue/no-restricted-html-elements"               : "off",
 		"vue/prefer-prop-type-boolean-first"            : "off",
 		"vue/valid-attribute-name"                      : "error",
-		"vue/valid-model-definition"                    : "error"
+		"vue/valid-model-definition"                    : "error",
+		"vue/define-emits-declaration"                  : "off",
+		"vue/define-props-declaration"                  : "off",
+		"vue/multiline-ternary"                         : rules["multiline-ternary"],
+		"vue/no-ref-object-destructure"                 : "error",
+		"vue/no-required-prop-with-default"             : "error",
+		"vue/padding-line-between-tags"                 : "off",
+		"vue/require-prop-comment"                      : "off",
+		"vue/v-on-handler-style"                        : ["error", ["method", "inline"]]
 	},
 
 	"overrides" :
