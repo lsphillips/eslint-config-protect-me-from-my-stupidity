@@ -72,6 +72,10 @@ module.exports =
 		"vue/no-v-text"                                 : "off",
 		"vue/prefer-separate-static-class"              : "off",
 		"vue/prefer-true-attribute-shorthand"           : "off",
-		"vue/prefer-prop-type-boolean-first"            : "off"
+		"vue/prefer-prop-type-boolean-first"            : "off",
+		"vue/multiline-ternary"                         : "off",
+		"vue/padding-line-between-tags"                 : "off",
+		"vue/require-prop-comment"                      : "off",
+		"vue/v-on-handler-style"                        : "off"
 	}
 };

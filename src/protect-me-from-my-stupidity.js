@@ -299,6 +299,9 @@ module.exports =
 		"no-unused-private-class-members"    : "error",
 		"prefer-object-has-own"              : "error",
 		"no-constant-binary-expression"      : "error",
+		"logical-assignment-operators"       : "off",
+		"no-empty-static-block"              : "error",
+		"no-new-native-nonconstructor"       : "error",
 		"import/default"                     : "off",
 		"import/dynamic-import-chunkname"    : "off",
 		"import/export"                      : "error",
@@ -354,6 +357,7 @@ module.exports =
 		"promise/no-return-in-finally"       : "error",
 		"promise/valid-params"               : "error",
 		"promise/prefer-await-to-then"       : "off",
-		"promise/prefer-await-to-callbacks"  : "off"
+		"promise/prefer-await-to-callbacks"  : "off",
+		"promise/no-multiple-resolved"       : "error"
 	}
 };
