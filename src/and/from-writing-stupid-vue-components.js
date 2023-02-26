@@ -231,7 +231,9 @@ module.exports =
 		"vue/no-required-prop-with-default"             : "error",
 		"vue/padding-line-between-tags"                 : "off",
 		"vue/require-prop-comment"                      : "off",
-		"vue/v-on-handler-style"                        : ["error", ["method", "inline"]]
+		"vue/v-on-handler-style"                        : ["error", ["method", "inline"]],
+		"vue/array-element-newline"                     : rules["array-element-newline"],
+		"vue/padding-lines-in-component-definition"     : "off"
 	},
 
 	"overrides" :

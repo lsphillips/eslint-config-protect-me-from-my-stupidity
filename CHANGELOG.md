@@ -2,6 +2,20 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## 9.3.0 - 2023-02-26
+
+### Added
+
+- Switched the `vue/padding-lines-in-component-definition` and `import/consistent-type-specifier-style` rules off.
+- Switched the `import/no-empty-named-blocks` rule on to ensure there are no empty named import blocks.
+- Configured the `vue/array-element-newline` rule to match the `array-element-newline` rule.
+
+### Changed
+
+- Updated the minimum required `eslint` version to `8.35.0`.
+- Updated the minimum required `eslint-plugin-import` version to `2.27.5`.
+- Updated the minimum required `eslint-plugin-vue` version to `9.9.0`.
+
 ## 9.2.0 - 2022-12-04
 
 ### Added

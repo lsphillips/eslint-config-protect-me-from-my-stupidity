@@ -76,6 +76,8 @@ module.exports =
 		"vue/multiline-ternary"                         : "off",
 		"vue/padding-line-between-tags"                 : "off",
 		"vue/require-prop-comment"                      : "off",
-		"vue/v-on-handler-style"                        : "off"
+		"vue/v-on-handler-style"                        : "off",
+		"vue/array-element-newline"                     : "off",
+		"vue/padding-lines-in-component-definition"     : "off"
 	}
 };
