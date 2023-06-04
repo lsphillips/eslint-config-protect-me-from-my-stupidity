@@ -2,6 +2,18 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## 9.4.0 - 2023-06-04
+
+### Added
+
+- Switched the `vue/no-root-v-if` rule off.
+- Switched the `vue/prefer-define-options` rule on to prefer using the `defineOptions()` macro instead of the default export. This rule is switched off when using the `protect-me-from-my-stupidity/but/let-my-vue-components-look-stupid` configuration.
+- Switched the `vue/valid-define-options` rule on to ensure the usage of the `defineOptions()` macro is correct.
+
+### Changed
+
+- Made the `eslint-plugin-vue` and `eslint-plugin-node` peer dependencies optional.
+
 ## 9.3.0 - 2023-02-26
 
 ### Added
