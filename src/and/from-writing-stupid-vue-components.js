@@ -233,7 +233,10 @@ module.exports =
 		"vue/require-prop-comment"                      : "off",
 		"vue/v-on-handler-style"                        : ["error", ["method", "inline"]],
 		"vue/array-element-newline"                     : rules["array-element-newline"],
-		"vue/padding-lines-in-component-definition"     : "off"
+		"vue/padding-lines-in-component-definition"     : "off",
+		"vue/no-root-v-if"                              : "off",
+		"vue/prefer-define-options"                     : "error",
+		"vue/valid-define-options"                      : "error"
 	},
 
 	"overrides" :

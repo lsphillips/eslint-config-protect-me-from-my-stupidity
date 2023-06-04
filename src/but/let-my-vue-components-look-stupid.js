@@ -78,6 +78,7 @@ module.exports =
 		"vue/require-prop-comment"                      : "off",
 		"vue/v-on-handler-style"                        : "off",
 		"vue/array-element-newline"                     : "off",
-		"vue/padding-lines-in-component-definition"     : "off"
+		"vue/padding-lines-in-component-definition"     : "off",
+		"vue/prefer-define-options"                     : "off"
 	}
 };
