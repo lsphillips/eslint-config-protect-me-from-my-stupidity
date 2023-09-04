@@ -43,7 +43,6 @@ module.exports =
 		"vue/space-unary-ops"                           : "off",
 		"vue/v-slot-style"                              : "off",
 		"vue/component-definition-name-casing"          : "off",
-		"vue/component-tags-order"                      : "off",
 		"vue/max-len"                                   : "off",
 		"vue/no-static-inline-styles"                   : "off",
 		"vue/require-name-property"                     : "off",
@@ -79,6 +78,7 @@ module.exports =
 		"vue/v-on-handler-style"                        : "off",
 		"vue/array-element-newline"                     : "off",
 		"vue/padding-lines-in-component-definition"     : "off",
-		"vue/prefer-define-options"                     : "off"
+		"vue/prefer-define-options"                     : "off",
+		"vue/require-macro-variable-name"               : "off"
 	}
 };

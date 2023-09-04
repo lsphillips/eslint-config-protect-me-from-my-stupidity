@@ -97,7 +97,6 @@ module.exports =
 		"vue/v-slot-style"                              : "error",
 		"vue/valid-v-slot"                              : "error",
 		"vue/component-definition-name-casing"          : ["error", "kebab-case"],
-		"vue/component-tags-order"                      : ["error", { "order" : ["template", "script", "style"] }],
 		"vue/max-len"                                   : "off",
 		"vue/no-deprecated-slot-attribute"              : "error",
 		"vue/no-deprecated-slot-scope-attribute"        : "error",
@@ -152,7 +151,6 @@ module.exports =
 		"vue/no-restricted-component-options"           : "off",
 		"vue/no-restricted-static-attribute"            : "off",
 		"vue/no-restricted-v-bind"                      : "off",
-		"vue/no-setup-props-destructure"                : "error",
 		"vue/no-sparse-arrays"                          : rules["no-sparse-arrays"],
 		"vue/no-template-target-blank"                  : "error",
 		"vue/no-unused-properties"                      : ["error", { "groups" : ["props", "data", "computed", "methods"] }],
@@ -227,7 +225,6 @@ module.exports =
 		"vue/define-emits-declaration"                  : "off",
 		"vue/define-props-declaration"                  : "off",
 		"vue/multiline-ternary"                         : rules["multiline-ternary"],
-		"vue/no-ref-object-destructure"                 : "error",
 		"vue/no-required-prop-with-default"             : "error",
 		"vue/padding-line-between-tags"                 : "off",
 		"vue/require-prop-comment"                      : "off",
@@ -236,7 +233,18 @@ module.exports =
 		"vue/padding-lines-in-component-definition"     : "off",
 		"vue/no-root-v-if"                              : "off",
 		"vue/prefer-define-options"                     : "error",
-		"vue/valid-define-options"                      : "error"
+		"vue/valid-define-options"                      : "error",
+		"vue/block-order"                               : ["error", { "order" : ["template", "script", "style"] }],
+		"vue/max-lines-per-block"                       : "off",
+		"vue/no-console"                                : rules["no-console"],
+		"vue/no-deprecated-model-definition"            : "error",
+		"vue/no-ref-object-reactivity-loss"             : "error",
+		"vue/no-restricted-component-names"             : "off",
+		"vue/no-setup-props-reactivity-loss"            : "error",
+		"vue/no-use-v-else-with-v-for"                  : "off",
+		"vue/require-macro-variable-name"               : "error",
+		"vue/require-typed-object-prop"                 : "error",
+		"vue/require-typed-ref"                         : "error"
 	},
 
 	"overrides" :
