@@ -7,7 +7,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Added
 
 - Switched the `vue/max-lines-per-block` and `vue/no-use-v-else-with-v-for` rules off.
-- Switched the `vue/block-order` rule on to enforce the same order enforced by `vue/component-tags-order`.
+- Switched the `vue/block-order` rule on to enforce the same order enforced by the removed `vue/component-tags-order` rule configuration.
 - Switched the `vue/no-console` rule on, enforcing the same rules as the `no-console` rule in template expressions.
 - Switched the `vue/no-deprecated-model-definition` rule on, disallowing the usage of the deprecated `model` component option.
 - Switched the `vue/no-ref-object-reactivity-loss` rule on to disallow ref usage that will result in lose of reactivity.
@@ -18,7 +18,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ### Removed
 
-- Removed configuration for the `no-return-await` as it is now deprecated.
+- Removed configuration for the `no-return-await` rule as it is now deprecated.
 - Removed configuration for the `vue/component-tags-order`, `vue/no-setup-props-destructure` and `vue/no-ref-object-destructure` rules as they are now deprecated.
 
 ## 9.4.0 - 2023-06-04
