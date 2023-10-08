@@ -70,7 +70,6 @@ module.exports =
 		"no-multiple-empty-lines"                : "off",
 		"no-negated-condition"                   : "off",
 		"no-nested-ternary"                      : "off",
-		"no-new-object"                          : "off",
 		"no-plusplus"                            : "off",
 		"no-restricted-syntax"                   : "off",
 		"no-tabs"                                : "off",
