@@ -256,7 +256,7 @@ module.exports =
 
 			"rules" :
 			{
-				"indent" : "off"
+				"@stylistic/js/indent" : "off"
 			}
 		}
 	]
