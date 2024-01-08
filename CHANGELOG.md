@@ -2,6 +2,21 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## 10.0.0 - 2024-08-01
+
+### Added
+
+- Switched the `vue/no-unused-emit-declarations` rule on, ensuring that all emit declarations are used.
+- Switched the `vue/v-if-else-key` rule on, ensuring that repeated components rendered within the same conditional scope have a key assigned to them.
+- The `@stylistic/eslint-plugin-js` is now a required peer dependency. This now powers the stylistic rules previously defined by `eslint`.
+
+### Changed
+
+- Updated the `max-depth` rule configuration, increasing the maximum allowed depth to `4`.
+- Updated the minimum required `eslint` version to `8.56.0`.
+- Updated the minimum required `eslint-plugin-import` version to `2.29.1`.
+- Updated the minimum required `eslint-plugin-vue` version to `9.19.2`.
+
 ## 9.5.1 - 2023-10-08
 
 ### Added

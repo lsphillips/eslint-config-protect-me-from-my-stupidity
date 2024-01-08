@@ -61,7 +61,7 @@ validate([
 		name            : 'protect-me-from-my-stupidity',
 		includeAllRules : true,
 		usingCore       : true,
-		plugins         : ['promise', 'import']
+		plugins         : ['promise', 'import', '@stylistic/js']
 	},
 	{
 		name            : 'protect-me-from-my-stupidity/but/let-me-write-stupid-tests',
@@ -73,7 +73,7 @@ validate([
 		name            : 'protect-me-from-my-stupidity/but/let-my-code-look-stupid',
 		includeAllRules : false,
 		usingCore       : true,
-		plugins         : ['promise', 'import']
+		plugins         : ['import', '@stylistic/js']
 	},
 	{
 		name            : 'protect-me-from-my-stupidity/and/from-writing-stupid-node-applications',

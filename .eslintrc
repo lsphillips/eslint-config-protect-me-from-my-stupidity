@@ -20,7 +20,7 @@
 
 			"rules" :
 			{
-				"quotes" : ["error", "double"]
+				"@stylistic/js/quotes" : ["error", "double"]
 			}
 		}
 	],

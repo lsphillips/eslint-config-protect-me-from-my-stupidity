@@ -50,12 +50,13 @@ This project configures ESLint to parse JavaScript with the following in mind by
 
 This project currently includes configuration for the following plugins:
 
-| Plugin                                                                       | Required dependency                           |
-| ---------------------------------------------------------------------------- | --------------------------------------------- |
-| [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)   | Yes                                           |
-| [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise) | Yes                                           |
-| [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)         | Only when using `vue` related configuration.  |
-| [eslint-plugin-node](https://www.npmjs.com/package/eslint-plugin-node)       | Only when using `node` related configuration. |
+| Plugin                                                                                   | Required dependency                           |
+| ---------------------------------------------------------------------------- ----------- | --------------------------------------------- |
+| [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)               | Yes                                           |
+| [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise)             | Yes                                           |
+| [@stylistic/eslint-plugin-js](https://www.npmjs.com/package/@stylistic/eslint-plugin-js) | Yes                                           |
+| [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)                     | Only when using `vue` related configuration.  |
+| [eslint-plugin-node](https://www.npmjs.com/package/eslint-plugin-node)                   | Only when using `node` related configuration. |
 
 **Note:** You will have to install the above plugins yourself as they are peer dependencies.
 
