@@ -51,7 +51,7 @@ This project configures ESLint to parse JavaScript with the following in mind by
 This project currently includes configuration for the following plugins:
 
 | Plugin                                                                                   | Required dependency                           |
-| ---------------------------------------------------------------------------- ----------- | --------------------------------------------- |
+| ---------------------------------------------------------------------------------------- | --------------------------------------------- |
 | [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)               | Yes                                           |
 | [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise)             | Yes                                           |
 | [@stylistic/eslint-plugin-js](https://www.npmjs.com/package/@stylistic/eslint-plugin-js) | Yes                                           |
