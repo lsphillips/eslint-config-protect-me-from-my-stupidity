@@ -246,7 +246,10 @@ module.exports =
 		"vue/require-typed-object-prop"                 : "error",
 		"vue/require-typed-ref"                         : "error",
 		"vue/no-unused-emit-declarations"               : "error",
-		"vue/v-if-else-key"                             : "error"
+		"vue/v-if-else-key"                             : "error",
+		"vue/enforce-style-attribute"                   : "off",
+		"vue/no-restricted-v-on"                        : "off",
+		"vue/require-explicit-slots"                    : "off"
 	},
 
 	"overrides" :

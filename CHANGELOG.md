@@ -2,6 +2,17 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/ProtectMeFromMyStupidity#semantic-versioning).
 
+## 10.1.0 - 2024-02-25
+
+### Added
+
+- Switched the `vue/enforce-style-attribute`, `vue/no-restricted-v-on` and `vue/require-explicit-slots` rules off.
+
+### Changed
+
+- Updated the minimum required `eslint` version to `8.57.0`.
+- Updated the minimum required `eslint-plugin-vue` version to `9.22.0`.
+
 ## 10.0.0 - 2024-01-08
 
 ### Added
