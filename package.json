@@ -1,7 +1,7 @@
 {
     "name" : "eslint-config-protect-me-from-my-stupidity",
 
-    "version" : "10.1.0",
+    "version" : "10.1.1",
 
     "type" : "commonjs",
 
@@ -24,14 +24,14 @@
     "repository" :
     {
         "type" : "git",
-        "url" : "https://github.com/lsphillips/ProtectMeFromMyStupidity.git"
+        "url" : "https://github.com/lsphillips/eslint-config-protect-me-from-my-stupidity.git"
     },
 
-    "homepage" : "https://github.com/lsphillips/ProtectMeFromMyStupidity",
+    "homepage" : "https://github.com/lsphillips/eslint-config-protect-me-from-my-stupidity",
 
     "bugs" :
     {
-        "url" : "https://github.com/lsphillips/ProtectMeFromMyStupidity/issues"
+        "url" : "https://github.com/lsphillips/eslint-config-protect-me-from-my-stupidity/issues"
     },
 
     "main" : "protect-me-from-my-stupidity.js",
