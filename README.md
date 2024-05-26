@@ -1,4 +1,4 @@
-# Protect Me From My Stupidity
+# `eslint-config-protect-me-from-my-stupidity`
 
 [![Available from NPM](https://img.shields.io/npm/v/eslint-config-protect-me-from-my-stupidity.svg?maxAge=900)](https://www.npmjs.com/package/eslint-config-protect-me-from-my-stupidity)
 [![Built using GitHub Action](https://github.com/lsphillips/eslint-config-protect-me-from-my-stupidity/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/lsphillips/eslint-config-protect-me-from-my-stupidity/actions)
