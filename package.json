@@ -75,7 +75,7 @@
 
     "devDependencies" :
     {
-        "eslint" : "8.57.0",
+        "eslint" : "9.13.0",
         "eslint-plugin-import" : "2.31.0",
         "eslint-plugin-promise" : "6.6.0",
         "eslint-plugin-vue" : "9.27.0",
