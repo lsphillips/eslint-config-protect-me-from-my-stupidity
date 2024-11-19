@@ -1,9 +1,9 @@
 {
     "name" : "eslint-config-protect-me-from-my-stupidity",
 
-    "version" : "10.1.1",
+    "version" : "11.0.0",
 
-    "type" : "commonjs",
+    "type" : "module",
 
     "description" : "An opinionated ESLint configuration that shall protect you from your stupidity when writing JavaScript.",
 
@@ -39,8 +39,7 @@
     "exports" :
     {
         "." : "./src/protect-me-from-my-stupidity.js",
-        "./and/*" : "./src/and/*.js",
-        "./but/*" : "./src/but/*.js"
+        "./and/*" : "./src/and/*.js"
     },
 
     "files" :
@@ -50,14 +49,19 @@
         "/src"
     ],
 
+    "dependencies" :
+    {
+        "globals" : "15.11.0"
+    },
+
     "peerDependencies" :
     {
-        "eslint" : "^8.57.0",
-        "eslint-plugin-import" : "^2.29.1",
-        "eslint-plugin-promise" : "^6.1.1",
-        "eslint-plugin-vue" : "^9.22.0",
-        "eslint-plugin-node" : "^11.1.0",
-        "@stylistic/eslint-plugin-js" : "^1.5.3"
+        "eslint" : "^9.13.0",
+        "eslint-plugin-promise" : "^7.1.0",
+        "eslint-plugin-vue" : "^9.29.1",
+        "eslint-plugin-n" : "^17.13.2",
+        "eslint-plugin-import" : "^2.31.0",
+        "@stylistic/eslint-plugin-js" : "^2.9.0"
     },
 
     "peerDependenciesMeta" :
@@ -67,7 +71,7 @@
             "optional" : true
         },
 
-        "eslint-plugin-node" :
+        "eslint-plugin-n" :
         {
             "optional" : true
         }
@@ -75,22 +79,21 @@
 
     "devDependencies" :
     {
-        "eslint" : "8.57.0",
-        "eslint-plugin-import" : "2.29.1",
-        "eslint-plugin-promise" : "6.6.0",
-        "eslint-plugin-vue" : "9.27.0",
-        "eslint-plugin-node" : "11.1.0",
-        "@stylistic/eslint-plugin-js" : "1.8.0",
-        "eslint-config-protect-me-from-my-stupidity" : "file:.",
-        "text-table" : "0.2.0",
-        "colors" : "1.4.0"
+        "minimatch" : "10.0.1",
+        "eslint" : "9.13.0",
+        "eslint-plugin-promise" : "7.1.0",
+        "eslint-plugin-vue" : "9.29.1",
+        "eslint-plugin-n" : "17.13.2",
+        "eslint-plugin-import" : "2.31.0",
+        "@stylistic/eslint-plugin-js" : "2.9.0",
+        "eslint-config-protect-me-from-my-stupidity" : "file:."
     },
 
     "scripts" :
     {
-        "test:lint" : "eslint \"**/*.js\" --ignore-path .gitignore",
-        "test:validate" : "node tests/validate.js",
-        "test" : "npm run test:validate && npm run test:lint",
+        "test:lint" : "eslint \"**/*.js\"",
+        "test:unit" : "node --test",
+        "test" : "npm run test:lint && npm run test:unit",
         "prepack" : "npm test"
     },
 

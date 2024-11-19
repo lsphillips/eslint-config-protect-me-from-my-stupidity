@@ -1,52 +1,65 @@
-"use strict";
+import globals from 'globals';
+import nodePlugin from 'eslint-plugin-n';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-module.exports =
-{
-	"plugins" :
-	[
-		"node"
-	],
-
-	"rules" :
+export default [
 	{
-		"node/handle-callback-err"                   : "error",
-		"node/no-callback-literal"                   : "error",
-		"node/no-exports-assign"                     : "error",
-		"node/no-extraneous-import"                  : "error",
-		"node/no-extraneous-require"                 : "error",
-		"node/no-missing-import"                     : "error",
-		"node/no-missing-require"                    : "error",
-		"node/no-new-require"                        : "error",
-		"node/no-path-concat"                        : "error",
-		"node/no-process-exit"                       : "warn",
-		"node/no-unpublished-bin"                    : "error",
-		"node/no-unpublished-import"                 : "error",
-		"node/no-unpublished-require"                : "error",
-		"node/no-unsupported-features/es-builtins"   : "off",
-		"node/no-unsupported-features/es-syntax"     : "off",
-		"node/no-unsupported-features/node-builtins" : "off",
-		"node/process-exit-as-throw"                 : "error",
-		"node/shebang"                               : "error",
-		"node/no-deprecated-api"                     : "error",
-		"node/no-mixed-requires"                     : "error",
-		"node/exports-style"                         : ["error", "module.exports"],
-		"node/file-extension-in-import"              : "error",
-		"node/global-require"                        : "error",
-		"node/callback-return"                       : "off",
-		"node/no-process-env"                        : "off",
-		"node/no-restricted-import"                  : "off",
-		"node/no-restricted-require"                 : "off",
-		"node/no-sync"                               : "error",
-		"node/prefer-global/buffer"                  : "error",
-		"node/prefer-global/console"                 : "error",
-		"node/prefer-global/process"                 : "error",
-		"node/prefer-global/text-decoder"            : "error",
-		"node/prefer-global/text-encoder"            : "error",
-		"node/prefer-global/url-search-params"       : "error",
-		"node/prefer-global/url"                     : "error",
-		"node/prefer-promises/dns"                   : "off",
-		"node/prefer-promises/fs"                    : "off"
+		name : 'protect-me-from-my-stupidity/and/from-writing-stupid-node-applications',
+
+		files : [
+			'**/*.?(m|c)js'
+		],
+
+		plugins : {
+			'n' : nodePlugin
+		},
+
+		languageOptions : {
+			globals : {
+				...globals.node
+			}
+		},
+
+		rules : {
+			'n/handle-callback-err'                   : 'error',
+			'n/no-callback-literal'                   : 'error',
+			'n/no-exports-assign'                     : 'error',
+			'n/no-extraneous-import'                  : 'error',
+			'n/no-extraneous-require'                 : 'error',
+			'n/no-missing-import'                     : 'error',
+			'n/no-missing-require'                    : 'error',
+			'n/no-new-require'                        : 'error',
+			'n/no-path-concat'                        : 'error',
+			'n/no-process-exit'                       : 'warn',
+			'n/no-unpublished-bin'                    : 'error',
+			'n/no-unpublished-import'                 : 'error',
+			'n/no-unpublished-require'                : 'error',
+			'n/no-unsupported-features/es-builtins'   : 'off',
+			'n/no-unsupported-features/es-syntax'     : 'off',
+			'n/no-unsupported-features/node-builtins' : 'off',
+			'n/process-exit-as-throw'                 : 'error',
+			'n/hashbang'                              : 'error',
+			'n/no-deprecated-api'                     : 'error',
+			'n/no-mixed-requires'                     : 'error',
+			'n/exports-style'                         : ['error', 'module.exports'],
+			'n/file-extension-in-import'              : 'error',
+			'n/global-require'                        : 'error',
+			'n/callback-return'                       : 'off',
+			'n/no-process-env'                        : 'off',
+			'n/no-restricted-import'                  : 'off',
+			'n/no-restricted-require'                 : 'off',
+			'n/no-sync'                               : 'error',
+			'n/prefer-global/buffer'                  : 'error',
+			'n/prefer-global/console'                 : 'error',
+			'n/prefer-global/process'                 : 'error',
+			'n/prefer-global/text-decoder'            : 'error',
+			'n/prefer-global/text-encoder'            : 'error',
+			'n/prefer-global/url-search-params'       : 'error',
+			'n/prefer-global/url'                     : 'error',
+			'n/prefer-promises/dns'                   : 'off',
+			'n/prefer-promises/fs'                    : 'off',
+			'n/prefer-node-protocol'                  : 'error'
+		}
 	}
-};
+];

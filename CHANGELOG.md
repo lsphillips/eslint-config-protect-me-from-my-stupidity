@@ -2,6 +2,34 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/eslint-config-protect-me-from-my-stupidity#semantic-versioning).
 
+## 11.0.0 - 2024-08-24
+
+### Added
+
+- Switched the `no-useless-assignment` and `promise/spec-only` rules on in the base configuration.
+- Switched the `n/prefer-node-protocol` rules on in the Node configuration extension.
+- Switched the `vue/no-deprecated-delete-set` and `vue/require-default-export` rules on in the Vue configuration extension.
+- Switched the `vue/max-props` and `vue/max-template-depth` rules off in the Vue configuration extension.
+
+### Changed
+
+- Moved to using to using the new flat configuration system.
+- Updated the minimum required `eslint` version to `9.13.0`.
+- Updated the minimum required `eslint-plugin-promise` version to `7.1.0`.
+- Updated the minimum required `eslint-plugin-vue` version to `9.29.1`.
+- Updated the minimum required `eslint-plugin-import` version to `2.31.0`.
+- Updated the minimum required `@stylistic/eslint-plugin-js` version to `2.9.0`.
+- Replaced `eslint-plugin-node`, as it's no longer maintained, with `eslint-plugin-n`. The minimum required version is `17.13.2`.
+- Replaced the `line-comment-position` rule with the `@stylistic/js/line-comment-position` rule in the base configuration.
+- Replaced the `multiline-comment-style` rule with the `@stylistic/js/multiline-comment-style` rule in the base configuration.
+- Replaced the `n/shebang` rule with the `n/hashbang` rule in the Node configuration extension.
+- Switched the `import/no-unresolved` rule off in the base configuration.
+
+### Removed
+
+- Removed the `but/let-my-code-look-stupid`, `but/let-my-vue-components-look-stupid` and `but/let-my-node-applications-look-stupid` configuration extensions.
+- Removed the `but/let-me-write-stupid-tests` configuration extension, these rule overrides are now included in the base configuration for all `.spec.{js,cjs,mjs}` and `.spec.{js, cjs, mjs}` files.
+
 ## 10.1.1 - 2024-05-26
 
 The package repository has moved and it's now reflected in the package metadata; this version contains no functionality changes.
