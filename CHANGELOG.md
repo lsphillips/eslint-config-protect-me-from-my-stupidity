@@ -13,7 +13,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ### Changed
 
-- Moved to using to using the new flat configuration system.
+- Moved to the new flat configuration system.
 - Updated the minimum required `eslint` version to `9.13.0`.
 - Updated the minimum required `eslint-plugin-promise` version to `7.1.0`.
 - Updated the minimum required `eslint-plugin-vue` version to `9.29.1`.
@@ -28,7 +28,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Removed
 
 - Removed the `but/let-my-code-look-stupid`, `but/let-my-vue-components-look-stupid` and `but/let-my-node-applications-look-stupid` configuration extensions.
-- Removed the `but/let-me-write-stupid-tests` configuration extension, these rule overrides are now included in the base configuration for all `.spec.{js,cjs,mjs}` and `.spec.{js, cjs, mjs}` files.
+- Removed the `but/let-me-write-stupid-tests` configuration extension, these rule overrides are now included in the base configuration for all `.spec.{js,cjs,mjs}` and `.test.{js, cjs, mjs}` files.
 
 ## 10.1.1 - 2024-05-26
 
