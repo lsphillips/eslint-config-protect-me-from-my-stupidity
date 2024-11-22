@@ -17,12 +17,13 @@ export default [
 ];
 ```
 
-The base configuration configures all core rules, as of `9.13.0`, and all the rules for the following plugins (which are peer dependencies):
+The base configuration configures all core rules, as of `9.15.0`, and all the rules for the following plugins (which are peer dependencies):
 
-| Plugin                  | Minimum Version |
-| ----------------------- | :-------------: |
-| `eslint-plugin-promise` | `7.1.0`         |
-| `eslint-plugin-import`  | `2.31.0`        |
+| Plugin                         | Minimum Version |
+| ------------------------------ | :-------------: |
+| `eslint-plugin-promise`        | `7.1.0`         |
+| `eslint-plugin-import`         | `2.31.0`        |
+| `@stylistic/eslint-plugin-js`  | `2.11.0`        |
 
 ESLint is configured to parse code as the the latest version of ECMAScript and to treat all `.js` and `.mjs` files as ES modules and `.cjs` files as CommonJS modules.
 
@@ -32,7 +33,7 @@ In addition to the base configuration you can use configuration extensions, thes
 
 | Name | Export                                      | Required Plugins           | Description                                             |
 | ---- | ------------------------------------------- | :------------------------: | ------------------------------------------------------- |
-| Node | `and/from-writing-stupid-vue-components`    | `eslint-plugin-vue@9.29.1` | Introduces additional rules for `.vue` component files. |
+| Node | `and/from-writing-stupid-vue-components`    | `eslint-plugin-vue@9.31.0` | Introduces additional rules for `.vue` component files. |
 | Vue  | `and/from-writing-stupid-node-applications` | `eslint-plugin-n@17.13.2`  | Introduces additional rules for Node.js code files.     |
 
 **Please Note:** The plugins required by the configuration extensions are optional peer dependencies.
@@ -49,13 +50,13 @@ This project follows a semantic versioning policy that aims not to surprise you.
 
 - Updating an existing rule that will result in ESLint reporting different or more errors.
 - Adding a new rule.
+- Removing support for a minor or patch version of ESlint or a plugin.
 
 ### Major release
 
-- Removing support for an old version of ESLint.
 - Adding support for a new plugin.
-- Removing support for an old version of an existing plugin.
-- Adding a new configuration.
+- Removing support for a major version of ESLint or a plugin.
+- Adding or removing configuration extensions.
 
 **Note:** It is advised that you only take patch versions using [tilde ranges](https://docs.npmjs.com/misc/semver#tilde-ranges-123-12-1).
 

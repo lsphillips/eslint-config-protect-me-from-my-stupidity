@@ -2,6 +2,18 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/eslint-config-protect-me-from-my-stupidity#semantic-versioning).
 
+## 11.1.0 - 2024-11-12
+
+### Added
+
+- Switched the `vue/prefer-use-template-ref` rule on in the Vue configuration extension.
+
+### Changed
+
+- Updated the minimum required `eslint` version to `9.15.0`.
+- Updated the minimum required `eslint-plugin-vue` version to `9.31.0`.
+- Updated the minimum required `@stylistic/eslint-plugin-js` version to `2.11.0`.
+
 ## 11.0.0 - 2024-11-22
 
 ### Added

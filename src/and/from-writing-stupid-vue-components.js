@@ -254,6 +254,7 @@ export default [
 			'vue/max-template-depth'                        : 'off',
 			'vue/no-deprecated-delete-set'                  : 'error',
 			'vue/require-default-export'                    : 'error',
+			'vue/prefer-use-template-ref'                   : 'error',
 			'@stylistic/js/indent'                          : 'off'
 		}
 	}
