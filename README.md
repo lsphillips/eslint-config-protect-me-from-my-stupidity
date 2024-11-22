@@ -3,62 +3,39 @@
 [![Available from NPM](https://img.shields.io/npm/v/eslint-config-protect-me-from-my-stupidity.svg?maxAge=900)](https://www.npmjs.com/package/eslint-config-protect-me-from-my-stupidity)
 [![Built using GitHub Action](https://github.com/lsphillips/eslint-config-protect-me-from-my-stupidity/actions/workflows/build.yml/badge.svg?branch=master)](https://github.com/lsphillips/eslint-config-protect-me-from-my-stupidity/actions)
 
-An opinionated configuration for ESLint that shall protect you from your stupidity when writing JavaScript.
+A very opinionated configuration for ESLint that shall protect you from your stupidity when writing JavaScript.
 
 ## Usage
 
-Add this to your ESLint configuration.
+You can use this in your ESLint configuration file, like so:
 
-``` json
-{
-  "extends" : "protect-me-from-my-stupidity"
-}
+``` js
+import protectMeFromMyStupidity from 'eslint-config-protect-me-from-my-stupidity';
+
+export default [
+  ...protectMeFromMyStupidity
+];
 ```
 
-You can use [configuration extensions](#configuration-extensions) to further cater for more specific scenarios, for example:
+The base configuration configures all core rules, as of `9.13.0`, and all the rules for the following plugins (which are peer dependencies):
 
-``` json
-{
-  "extends" : [
-    "protect-me-from-my-stupidity",
-    "protect-me-from-my-stupidity/but/let-my-code-look-stupid"
-  ]
-}
-```
+| Plugin                  | Minimum Version |
+| ----------------------- | :-------------: |
+| `eslint-plugin-promise` | `7.1.0`         |
+| `eslint-plugin-import`  | `2.31.0`        |
+
+ESLint is configured to parse code as the the latest version of ECMAScript and to treat all `.js` and `.mjs` files as ES modules and `.cjs` files as CommonJS modules.
 
 ### Configuration extensions
 
-| Configuration                                       | Usage                                                                                                                                    |
-| --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| `and/from-writing-stupid-vue-components`            | Introduces additional rules for Vue components. At the moment any Vue 3.0 rules that involve deprecating Vue 2.0 feature are turned off. |
-| `and/from-writing-stupid-node-applications`         | Introduces additional rules for Node applications.                                                                                       |
-| `but/let-my-code-look-stupid`                       | Stops all code style checks.                                                                                                             |
-| `but/let-me-write-stupid-tests`                     | Loosens up some rules for writing test specifications.                                                                                   |
-| `but/let-my-vue-components-look-stupid`             | Stops all code style checks for Vue components.                                                                                          |
-| `but/let-my-node-applications-look-stupid`          | Stops all code style checks for Node applications.                                                                                       |
+In addition to the base configuration you can use configuration extensions, these are available as seperate exports.
 
-## Parser
+| Name | Export                                      | Required Plugins           | Description                                             |
+| ---- | ------------------------------------------- | :------------------------: | ------------------------------------------------------- |
+| Node | `and/from-writing-stupid-vue-components`    | `eslint-plugin-vue@9.29.1` | Introduces additional rules for `.vue` component files. |
+| Vue  | `and/from-writing-stupid-node-applications` | `eslint-plugin-n@17.13.2`  | Introduces additional rules for Node.js code files.     |
 
-This project configures ESLint to parse JavaScript with the following in mind by default:
-
-- ECMAScript modules are enabled.
-- All features up to ECMAScript 2021 are enabled.
-
-**Note:** This project makes no other assumption about your JavaScript environment, you must configure that yourself. See https://eslint.org/docs/user-guide/configuring#specifying-environments.
-
-## Plugins
-
-This project currently includes configuration for the following plugins:
-
-| Plugin                                                                                   | Required dependency                           |
-| ---------------------------------------------------------------------------------------- | --------------------------------------------- |
-| [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)               | Yes                                           |
-| [eslint-plugin-promise](https://www.npmjs.com/package/eslint-plugin-promise)             | Yes                                           |
-| [@stylistic/eslint-plugin-js](https://www.npmjs.com/package/@stylistic/eslint-plugin-js) | Yes                                           |
-| [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue)                     | Only when using `vue` related configuration.  |
-| [eslint-plugin-node](https://www.npmjs.com/package/eslint-plugin-node)                   | Only when using `node` related configuration. |
-
-**Note:** You will have to install the above plugins yourself as they are peer dependencies.
+**Please Note:** The plugins required by the configuration extensions are optional peer dependencies.
 
 ## Semantic versioning
 
