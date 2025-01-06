@@ -7,9 +7,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Added
 
 - Introduced the Web (`and/from-writing-stupid-web-applications`) configuration extension.
-- Switched the `promise/prefer-catch` on in the base configuration.
-- Switched the `vue/slot-name-casing` on in the Vue configuration extension, enforcing slot names to be kebab-case.
-- Switched the `vue/restricted-component-names` off in the Vue configuration extension.
+- Switched the `promise/prefer-catch` rule on in the base configuration.
+- Switched the `vue/slot-name-casing` rule on in the Vue configuration extension, enforcing slot names to be kebab-case.
+- Switched the `vue/restricted-component-names` rule off in the Vue configuration extension.
 
 ### Changed
 
