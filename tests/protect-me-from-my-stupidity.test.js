@@ -23,7 +23,7 @@ import {
 
 describe('protectMeFromMyStupidity', function ()
 {
-	['js', 'cjs', 'mjs'].forEach(function (fileExtension)
+	['js', 'cjs', 'mjs', 'jsx'].forEach(function (fileExtension)
 	{
 		describe(`for .${fileExtension} files`, function ()
 		{
@@ -41,7 +41,7 @@ describe('protectMeFromMyStupidity', function ()
 
 				// Act.
 				const config = resolveConfigForFile(
-					protectMeFromMyStupidity, `example.${fileExtension}`
+					protectMeFromMyStupidity(), `example.${fileExtension}`
 				);
 
 				// Assert.
@@ -62,7 +62,7 @@ describe('protectMeFromMyStupidity', function ()
 
 				// Act.
 				const config = resolveConfigForFile(
-					protectMeFromMyStupidity, `example.${fileExtension}`
+					protectMeFromMyStupidity(), `example.${fileExtension}`
 				);
 
 				// Assert.
@@ -83,7 +83,7 @@ describe('protectMeFromMyStupidity', function ()
 
 				// Act.
 				const config = resolveConfigForFile(
-					protectMeFromMyStupidity, `example.${fileExtension}`
+					protectMeFromMyStupidity(), `example.${fileExtension}`
 				);
 
 				// Assert.
@@ -94,11 +94,22 @@ describe('protectMeFromMyStupidity', function ()
 			{
 				// Act.
 				const config = resolveConfigForFile(
-					protectMeFromMyStupidity, `example.${fileExtension}`
+					protectMeFromMyStupidity(), `example.${fileExtension}`
 				);
 
 				// Assert.
 				assert.strictEqual(config.languageOptions.ecmaVersion, 'latest');
+			});
+
+			it('shall be parsed where global strict mode is implied', function ()
+			{
+				// Act.
+				const config = resolveConfigForFile(
+					protectMeFromMyStupidity(), `example.${fileExtension}`
+				);
+
+				// Assert.
+				assert.strictEqual(config.languageOptions.parserOptions.ecmaFeatures.impliedStrict, true);
 			});
 
 			['test', 'spec'].forEach(function (testFileExtension)
@@ -117,7 +128,7 @@ describe('protectMeFromMyStupidity', function ()
 							{
 								// Act.
 								const config = resolveConfigForFile(
-									protectMeFromMyStupidity, `example.${testFileExtension}.${fileExtension}`
+									protectMeFromMyStupidity(), `example.${testFileExtension}.${fileExtension}`
 								);
 
 								// Assert.
@@ -133,7 +144,7 @@ describe('protectMeFromMyStupidity', function ()
 	{
 		// Act.
 		const config = resolveConfigForFile(
-			protectMeFromMyStupidity, 'example.js'
+			protectMeFromMyStupidity(), 'example.js'
 		);
 
 		// Assert.
@@ -144,7 +155,7 @@ describe('protectMeFromMyStupidity', function ()
 	{
 		// Act.
 		const config = resolveConfigForFile(
-			protectMeFromMyStupidity, 'example.cjs'
+			protectMeFromMyStupidity(), 'example.cjs'
 		);
 
 		// Assert.
@@ -158,10 +169,21 @@ describe('protectMeFromMyStupidity', function ()
 	{
 		// Act.
 		const config = resolveConfigForFile(
-			protectMeFromMyStupidity, 'example.mjs'
+			protectMeFromMyStupidity(), 'example.mjs'
 		);
 
 		// Assert.
 		assert.strictEqual(config.languageOptions.sourceType, 'module');
+	});
+
+	it('shall enable JSX for .jsx files', function ()
+	{
+		// Act.
+		const config = resolveConfigForFile(
+			protectMeFromMyStupidity(), 'example.jsx'
+		);
+
+		// Assert.
+		assert.strictEqual(config.languageOptions.parserOptions.ecmaFeatures.jsx, true);
 	});
 });

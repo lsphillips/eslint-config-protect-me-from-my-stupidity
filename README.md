@@ -13,7 +13,7 @@ You can use this in your ESLint configuration file, like so:
 import protectMeFromMyStupidity from 'eslint-config-protect-me-from-my-stupidity';
 
 export default [
-  ...protectMeFromMyStupidity
+  ...protectMeFromMyStupidity()
 ];
 ```
 
@@ -25,7 +25,7 @@ The base configuration configures all core rules, as of `9.15.0`, and all the ru
 | `eslint-plugin-import`         | `2.31.0`        |
 | `@stylistic/eslint-plugin-js`  | `2.11.0`        |
 
-ESLint is configured to parse code as the the latest version of ECMAScript and to treat all `.js` and `.mjs` files as ES modules and `.cjs` files as CommonJS modules.
+ESLint is configured to parse code as the the latest version of ECMAScript and to treat all `.js`, `.mjs` and `.jsx` files as ES modules and `.cjs` files as CommonJS modules.
 
 ### Configuration extensions
 
@@ -34,9 +34,22 @@ In addition to the base configuration you can use configuration extensions, thes
 | Name | Export                                      | Required Plugins           | Description                                             |
 | ---- | ------------------------------------------- | :------------------------: | ------------------------------------------------------- |
 | Node | `and/from-writing-stupid-vue-components`    | `eslint-plugin-vue@9.31.0` | Introduces additional rules for `.vue` component files. |
+| Web  | `and/from-writing-stupid-web-applications`  | -                          | Introduces additional rules for web code files.         |
 | Vue  | `and/from-writing-stupid-node-applications` | `eslint-plugin-n@17.13.2`  | Introduces additional rules for Node.js code files.     |
 
-**Please Note:** The plugins required by the configuration extensions are optional peer dependencies.
+**Please Note:** The plugins required by the configuration extensions are optional peer dependencies, so if you aren't using a configuration extension you don't need to install its required plugins.
+
+Configuration extensions can be configured to use your own file patterns **instead** of the defaults, like so:
+
+``` js
+import andFromWritingStupidWebApplications from 'eslint-config-protect-me-from-my-stupidity/and/from-writing-stupid-web-applications';
+
+export default [
+  ...andFromWritingStupidWebApplications([
+    'src/ui/**/*.js'
+  ])
+];
+```
 
 ## Semantic versioning
 

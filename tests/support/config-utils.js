@@ -2,6 +2,7 @@ import assert from 'node:assert';
 import {
 	minimatch
 } from 'minimatch';
+import merge from 'merge-options';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -21,27 +22,21 @@ export function resolveConfigForFile (configs, file)
 {
 	const config = {
 		rules           : {},
-		languageOptions : {},
-		globals         : {}
+		languageOptions : {}
 	};
 
-	for (const { files, rules = {}, languageOptions = {}, globals = {} } of configs)
+	for (const { files, rules = {}, languageOptions = {} } of configs)
 	{
 		if (
 			files.some(f => minimatch(file, f))
 		)
 		{
 			config.rules = {
-				...config.rules, ...rules
+				...config.rules,
+				...rules
 			};
 
-			config.languageOptions = {
-				...config.languageOptions, ...languageOptions
-			};
-
-			config.globals = {
-				...config.globals, ...globals
-			};
+			config.languageOptions = merge(config.languageOptions, languageOptions);
 		}
 	}
 

@@ -2,6 +2,26 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/eslint-config-protect-me-from-my-stupidity#semantic-versioning).
 
+## 12.0.0 - 2025-01-07
+
+### Added
+
+- Introduced the Web (`and/from-writing-stupid-web-applications`) configuration extension.
+- Switched the `promise/prefer-catch` on in the base configuration.
+- Switched the `vue/slot-name-casing` on in the Vue configuration extension, enforcing slot names to be kebab-case.
+- Switched the `vue/restricted-component-names` off in the Vue configuration extension.
+
+### Changed
+
+- Updated the base configuration to enable the JSX language feature for `.jsx` files.
+- Updated the base configuration to enable implied global strict mode.
+- Updated the base configuration and the configuration extensions to be a function. The configuration extensions enable developers to specify their own file matching patterns.
+- Updated the minimum required `eslint` version to `9.17.0`.
+- Updated the minimum required `eslint-plugin-promise` version to `7.2.1`.
+- Updated the minimum required `eslint-plugin-vue` version to `9.32.0`.
+- Updated the minimum required `eslint-plugin-n` version to `17.15.1`.
+- Updated the minimum required `@stylistic/eslint-plugin-js` version to `2.12.1`.
+
 ## 11.1.0 - 2024-11-12
 
 ### Added

@@ -17,7 +17,7 @@ import {
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-describe('andFromWritingStupidVueComponents', function ()
+describe('andFromWritingStupidVueComponents(files)', function ()
 {
 	describe('for .vue files', function ()
 	{
@@ -30,7 +30,7 @@ describe('andFromWritingStupidVueComponents', function ()
 
 			// Act.
 			const config = resolveConfigForFile(
-				andFromWritingStupidVueComponents, 'example.vue'
+				andFromWritingStupidVueComponents(), 'example.vue'
 			);
 
 			// Assert.
@@ -47,7 +47,7 @@ describe('andFromWritingStupidVueComponents', function ()
 
 			// Act.
 			const config = resolveConfigForFile(
-				andFromWritingStupidVueComponents, 'example.vue'
+				andFromWritingStupidVueComponents(), 'example.vue'
 			);
 
 			// Assert.
@@ -64,7 +64,7 @@ describe('andFromWritingStupidVueComponents', function ()
 
 			// Act.
 			const config = resolveConfigForFile(
-				andFromWritingStupidVueComponents, 'example.vue'
+				andFromWritingStupidVueComponents(), 'example.vue'
 			);
 
 			// Assert.
@@ -75,11 +75,27 @@ describe('andFromWritingStupidVueComponents', function ()
 		{
 			// Act.
 			const config = resolveConfigForFile(
-				andFromWritingStupidVueComponents, 'example.vue'
+				andFromWritingStupidVueComponents(), 'example.vue'
 			);
 
 			// Assert.
 			assert.strictEqual(config.rules['@stylistic/js/indent'], 'off');
+		});
+	});
+
+	it('when file patterns are provided it shall use those patterns instead', function ()
+	{
+		const files = [
+			'**/*.sfc'
+		];
+
+		// Act.
+		const configs = andFromWritingStupidVueComponents(files);
+
+		// Assert.
+		configs.forEach(config =>
+		{
+			assert.deepEqual(config.files, files, `Configuration ${config.name} must not be using the default file patterns.`);
 		});
 	});
 });
