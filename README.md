@@ -39,7 +39,7 @@ In addition to the base configuration you can use configuration extensions, thes
 
 **Please Note:** The plugins required by the configuration extensions are optional peer dependencies, so if you aren't using a configuration extension you don't need to install its required plugins.
 
-Configuration extensions can be configured to use your own file patterns **instead** of the defaults, like so:
+Configuration extensions can be configured to use your own file matching patterns **instead** of the defaults, like so:
 
 ``` js
 import andFromWritingStupidWebApplications from 'eslint-config-protect-me-from-my-stupidity/and/from-writing-stupid-web-applications';

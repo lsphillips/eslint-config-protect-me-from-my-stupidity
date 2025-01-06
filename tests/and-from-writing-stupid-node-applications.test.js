@@ -85,7 +85,7 @@ describe('andFromWritingStupidNodeApplications(files)', function ()
 		});
 	});
 
-	it('when file patterns are provided it shall use those patterns instead', function ()
+	it('when file matching patterns are provided it shall use those patterns instead', function ()
 	{
 		const files = [
 			'**/*.ts'
