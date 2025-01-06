@@ -2,6 +2,7 @@ import {
 	describe,
 	it
 } from 'node:test';
+import assert from 'node:assert';
 import globals from 'globals';
 import andFromWritingStupidNodeApplications from 'eslint-config-protect-me-from-my-stupidity/and/from-writing-stupid-node-applications';
 import {
@@ -17,11 +18,11 @@ import {
 
 // - - - - - - - - - - - - - - - - - - - - - - -
 
-describe('andFromWritingStupidNodeApplications', function ()
+describe('andFromWritingStupidNodeApplications(files)', function ()
 {
 	['js', 'cjs', 'mjs'].forEach(function (fileExtension)
 	{
-		describe(`for .${fileExtension} files`, function ()
+		describe(`by default for .${fileExtension} files`, function ()
 		{
 			it('shall configure all the rules of the `node` plugin', function ()
 			{
@@ -32,7 +33,7 @@ describe('andFromWritingStupidNodeApplications', function ()
 
 				// Act.
 				const config = resolveConfigForFile(
-					andFromWritingStupidNodeApplications, `example.${fileExtension}`
+					andFromWritingStupidNodeApplications(), `example.${fileExtension}`
 				);
 
 				// Assert.
@@ -48,7 +49,7 @@ describe('andFromWritingStupidNodeApplications', function ()
 
 				// Act.
 				const config = resolveConfigForFile(
-					andFromWritingStupidNodeApplications, `example.${fileExtension}`
+					andFromWritingStupidNodeApplications(), `example.${fileExtension}`
 				);
 
 				// Assert.
@@ -64,7 +65,7 @@ describe('andFromWritingStupidNodeApplications', function ()
 
 				// Act.
 				const config = resolveConfigForFile(
-					andFromWritingStupidNodeApplications, `example.${fileExtension}`
+					andFromWritingStupidNodeApplications(), `example.${fileExtension}`
 				);
 
 				// Assert.
@@ -75,12 +76,28 @@ describe('andFromWritingStupidNodeApplications', function ()
 			{
 				// Act.
 				const config = resolveConfigForFile(
-					andFromWritingStupidNodeApplications, `example.${fileExtension}`
+					andFromWritingStupidNodeApplications(), `example.${fileExtension}`
 				);
 
 				// Assert.
 				assertNoIncorrectGlobalsInConfig(config, globals.node);
 			});
+		});
+	});
+
+	it('when file matching patterns are provided it shall use those patterns instead', function ()
+	{
+		const files = [
+			'**/*.ts'
+		];
+
+		// Act.
+		const configs = andFromWritingStupidNodeApplications(files);
+
+		// Assert.
+		configs.forEach(config =>
+		{
+			assert.deepEqual(config.files, files, `Configuration ${config.name} must not be using the default file patterns.`);
 		});
 	});
 });

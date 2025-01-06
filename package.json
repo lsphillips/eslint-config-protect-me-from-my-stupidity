@@ -1,7 +1,7 @@
 {
     "name" : "eslint-config-protect-me-from-my-stupidity",
 
-    "version" : "11.1.0",
+    "version" : "12.0.0",
 
     "type" : "module",
 
@@ -51,17 +51,17 @@
 
     "dependencies" :
     {
-        "globals" : "15.11.0"
+        "globals" : "15.14.0"
     },
 
     "peerDependencies" :
     {
-        "eslint" : "^9.15.0",
-        "eslint-plugin-promise" : "^7.1.0",
-        "eslint-plugin-vue" : "^9.31.0",
-        "eslint-plugin-n" : "^17.13.2",
+        "eslint" : "^9.17.0",
+        "eslint-plugin-promise" : "^7.2.1",
+        "eslint-plugin-vue" : "^9.32.0",
+        "eslint-plugin-n" : "^17.15.1",
         "eslint-plugin-import" : "^2.31.0",
-        "@stylistic/eslint-plugin-js" : "^2.11.0"
+        "@stylistic/eslint-plugin-js" : "^2.12.1"
     },
 
     "peerDependenciesMeta" :
@@ -80,9 +80,10 @@
     "devDependencies" :
     {
         "minimatch" : "10.0.1",
+        "merge-options" : "3.0.4",
         "eslint" : "9.17.0",
-        "eslint-plugin-promise" : "7.1.0",
-        "eslint-plugin-vue" : "9.31.0",
+        "eslint-plugin-promise" : "7.2.1",
+        "eslint-plugin-vue" : "9.32.0",
         "eslint-plugin-n" : "17.15.1",
         "eslint-plugin-import" : "2.31.0",
         "@stylistic/eslint-plugin-js" : "2.12.1",
