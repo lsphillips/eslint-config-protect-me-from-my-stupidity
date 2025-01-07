@@ -273,7 +273,7 @@ export default function protectMeFromMyStupidity ()
 				'import/no-import-module-exports'                : 'error',
 				'import/consistent-type-specifier-style'         : 'off',
 				'import/no-empty-named-blocks'                   : 'error',
-				'promise/catch-or-return'                        : 'error',
+				'promise/catch-or-return'                        : ['error', { 'allowFinally' : true }],
 				'promise/no-return-wrap'                         : 'error',
 				'promise/param-names'                            : 'error',
 				'promise/always-return'                          : 'off',
