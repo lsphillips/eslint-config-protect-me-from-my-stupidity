@@ -2,6 +2,12 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/eslint-config-protect-me-from-my-stupidity#semantic-versioning).
 
+## 12.0.1 - 2025-01-07
+
+### Changed
+
+- Updated the `promise/catch-or-return` rule in the base configuration to allow the use of the `finally()` method.
+
 ## 12.0.0 - 2025-01-07
 
 ### Added
