@@ -17,13 +17,13 @@ export default [
 ];
 ```
 
-The base configuration configures all core rules, as of `9.17.0`, and all the rules for the following plugins (which are peer dependencies):
+The base configuration configures all core rules, as of `9.20.0`, and all the rules for the following plugins (which are peer dependencies):
 
 | Plugin                         | Minimum Version |
 | ------------------------------ | :-------------: |
 | `eslint-plugin-promise`        | `7.2.1`         |
 | `eslint-plugin-import`         | `2.31.0`        |
-| `@stylistic/eslint-plugin-js`  | `2.12.1`        |
+| `@stylistic/eslint-plugin-js`  | `3.1.0`         |
 
 ESLint is configured to parse code as the the latest version of ECMAScript and to treat all `.js`, `.mjs` and `.jsx` files as ES modules and `.cjs` files as CommonJS modules.
 

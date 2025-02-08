@@ -2,6 +2,13 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/eslint-config-protect-me-from-my-stupidity#semantic-versioning).
 
+## 13.0.0 - 2025-02-08
+
+### Changed
+
+- Updated the minimum required `eslint` version to `9.20.0`.
+- Updated the minimum required `@stylistic/eslint-plugin-js` version to `3.1.0`.
+
 ## 12.0.1 - 2025-01-07
 
 ### Changed
