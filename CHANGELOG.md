@@ -2,6 +2,14 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/eslint-config-protect-me-from-my-stupidity#semantic-versioning).
 
+## 13.0.1 - 2025-02-09
+
+### Changed
+
+- Updated the `@stylistic/js/indent` rule configuration in the base configuration to ensure that multiline variable declarations are ignored.
+- Switched the `no-useless-assignment` rule off in the base configuration.
+- Updated the `n/hashbang` rule configuration in the Node configuration extension to ignore unpublished files.
+
 ## 13.0.0 - 2025-02-08
 
 ### Changed
