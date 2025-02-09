@@ -6,8 +6,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 
 ### Changed
 
+- Updated the `@stylistic/js/indent` rule configuration in the base configuration to ensure that multiline variable declarations are ignored.
 - Switched the `no-useless-assignment` rule off in the base configuration.
-- Updated the `@stylistic/js/indent` configuration to ensure that the declarators should be aligned with the first declarator.
+- Updated the `n/hashbang` rule configuration in the Node configuration extension to ignore unpublished files.
 
 ## 13.0.0 - 2025-02-08
 

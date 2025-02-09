@@ -309,7 +309,7 @@ export default function protectMeFromMyStupidity ()
 				'@stylistic/js/func-call-spacing'                : 'error',
 				'@stylistic/js/function-paren-newline'           : ['error', 'consistent'],
 				'@stylistic/js/implicit-arrow-linebreak'         : 'off',
-				'@stylistic/js/indent'                           : ['error', 'tab', { 'SwitchCase' : 1, 'VariableDeclarator' : 'first', 'ignoredNodes' : ['TemplateLiteral *'] }],
+				'@stylistic/js/indent'                           : ['error', 'tab', { 'SwitchCase' : 1, 'ignoredNodes' : ['TemplateLiteral *', 'VariableDeclarator *'] }],
 				'@stylistic/js/jsx-quotes'                       : 'error',
 				'@stylistic/js/key-spacing'                      : ['error', { 'beforeColon' : true, 'afterColon' : true, 'mode' : 'minimum' }],
 				'@stylistic/js/keyword-spacing'                  : 'error',

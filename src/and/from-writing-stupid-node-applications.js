@@ -41,7 +41,7 @@ export default function andFromWritingStupidNodeApplications (files = [
 				'n/no-unsupported-features/es-syntax'     : 'off',
 				'n/no-unsupported-features/node-builtins' : 'off',
 				'n/process-exit-as-throw'                 : 'error',
-				'n/hashbang'                              : 'error',
+				'n/hashbang'                              : ['error', { 'ignoreUnpublished' : true }],
 				'n/no-deprecated-api'                     : 'error',
 				'n/no-mixed-requires'                     : 'error',
 				'n/exports-style'                         : ['error', 'module.exports'],
