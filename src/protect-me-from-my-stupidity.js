@@ -156,7 +156,7 @@ export default function protectMeFromMyStupidity ()
 				'new-cap'                                        : 'error',
 				'no-array-constructor'                           : 'error',
 				'no-bitwise'                                     : 'off',
-				'no-continue'                                    : 'error',
+				'no-continue'                                    : 'off',
 				'no-inline-comments'                             : 'off',
 				'no-lonely-if'                                   : 'error',
 				'no-multi-assign'                                : 'off',

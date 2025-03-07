@@ -108,7 +108,6 @@ export default function andFromWritingStupidVueComponents (files = [
 				'vue/no-unsupported-features'                   : 'off',
 				'vue/require-name-property'                     : 'error',
 				'vue/static-class-names-order'                  : 'off',
-				'vue/valid-v-bind-sync'                         : 'error',
 				'vue/sort-keys'                                 : 'off',
 				'vue/padding-line-between-blocks'               : 'error',
 				'vue/array-bracket-newline'                     : ['error', 'consistent'],
@@ -160,8 +159,6 @@ export default function andFromWritingStupidVueComponents (files = [
 				'vue/no-useless-mustaches'                      : 'error',
 				'vue/no-useless-v-bind'                         : 'error',
 				'vue/no-v-for-template-key-on-child'            : 'off',
-				'vue/no-v-for-template-key'                     : 'error',
-				'vue/no-v-model-argument'                       : 'off',
 				'vue/no-watch-after-await'                      : 'error',
 				'vue/object-curly-newline'                      : ['error', { 'consistent' : true }],
 				'vue/object-property-newline'                   : 'off',
@@ -223,7 +220,6 @@ export default function andFromWritingStupidVueComponents (files = [
 				'vue/no-restricted-html-elements'               : 'off',
 				'vue/prefer-prop-type-boolean-first'            : 'off',
 				'vue/valid-attribute-name'                      : 'error',
-				'vue/valid-model-definition'                    : 'error',
 				'vue/define-emits-declaration'                  : 'off',
 				'vue/define-props-declaration'                  : 'off',
 				'vue/multiline-ternary'                         : 'off',
@@ -259,6 +255,8 @@ export default function andFromWritingStupidVueComponents (files = [
 				'vue/prefer-use-template-ref'                   : 'error',
 				'vue/restricted-component-names'                : 'off',
 				'vue/slot-name-casing'                          : ['error', 'kebab-case'],
+				'vue/no-implicit-coercion'                      : 'error',
+				'vue/no-import-compiler-macros'                 : 'error',
 				'@stylistic/js/indent'                          : 'off'
 			}
 		}
