@@ -2,6 +2,25 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/eslint-config-protect-me-from-my-stupidity#semantic-versioning).
 
+## 14.0.0 - 2025-03-07
+
+### Added
+
+- Switched the `vue/no-import-compiler-macros` rule on in the Vue configuration extension; disallowing the importing of compiler macros.
+- Switched the `vue/no-implicit-coercion` rule on in the Vue configuration extension matching the `no-implicit-coercion` rule in the base configuration.
+
+### Changed
+
+- Updated the minimum required `eslint` version to `9.21.0`.
+- Updated the minimum required `@stylistic/eslint-plugin-js` version to `4.2.0`.
+- Updated the minimum required `eslint-plugin-vue` version to `10.0.0`.
+- Updated the minimum required `eslint-plugin-n` version to `17.16.2`.
+- Switched the `no-continue` rule off in the base configuration; allowing the use of the `continue` statement.
+
+### Removed
+
+- Removed configuration for the `vue/no-v-for-template-key`, `vue/no-v-model-argument`, `vue/valid-model-definition` and `vue/valid-v-bind-sync` rules from the Vue configuration extension as they are deprecated.
+
 ## 13.0.1 - 2025-02-09
 
 ### Changed

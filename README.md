@@ -17,13 +17,13 @@ export default [
 ];
 ```
 
-The base configuration configures all core rules, as of `9.20.0`, and all the rules for the following plugins (which are peer dependencies):
+The base configuration configures all core rules, as of `9.21.0`, and all the rules for the following plugins (which are peer dependencies):
 
 | Plugin                         | Minimum Version |
 | ------------------------------ | :-------------: |
 | `eslint-plugin-promise`        | `7.2.1`         |
 | `eslint-plugin-import`         | `2.31.0`        |
-| `@stylistic/eslint-plugin-js`  | `3.1.0`         |
+| `@stylistic/eslint-plugin-js`  | `4.2.0`         |
 
 ESLint is configured to parse code as the the latest version of ECMAScript and to treat all `.js`, `.mjs` and `.jsx` files as ES modules and `.cjs` files as CommonJS modules.
 
@@ -33,9 +33,9 @@ In addition to the base configuration you can use configuration extensions, thes
 
 | Name | Export                                      | Required Plugins           | Description                                             |
 | ---- | ------------------------------------------- | :------------------------: | ------------------------------------------------------- |
-| Node | `and/from-writing-stupid-vue-components`    | `eslint-plugin-vue@9.32.0` | Introduces additional rules for `.vue` component files. |
+| Node | `and/from-writing-stupid-vue-components`    | `eslint-plugin-vue@10.0.0` | Introduces additional rules for `.vue` component files. |
 | Web  | `and/from-writing-stupid-web-applications`  | -                          | Introduces additional rules for web code files.         |
-| Vue  | `and/from-writing-stupid-node-applications` | `eslint-plugin-n@17.15.1`  | Introduces additional rules for Node.js code files.     |
+| Vue  | `and/from-writing-stupid-node-applications` | `eslint-plugin-n@17.16.2`  | Introduces additional rules for Node.js code files.     |
 
 **Please Note:** The plugins required by the configuration extensions are optional peer dependencies, so if you aren't using a configuration extension you don't need to install its required plugins.
 
