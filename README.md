@@ -17,9 +17,9 @@ export default [
 ];
 ```
 
-The base configuration configures all core rules, as of `9.21.0`, and all the rules for the following plugins (which are peer dependencies):
+The base configuration configures all core rules (as of `9.23.0`) and all of the rules for the following plugins (which are dependencies brought in by this configuration):
 
-| Plugin                         | Minimum Version |
+| Plugin                         | Version         |
 | ------------------------------ | :-------------: |
 | `eslint-plugin-promise`        | `7.2.1`         |
 | `eslint-plugin-import`         | `2.31.0`        |
