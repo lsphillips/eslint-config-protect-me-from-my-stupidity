@@ -78,7 +78,7 @@
         "minimatch" : "10.0.3",
         "merge-options" : "3.0.4",
         "eslint" : "9.26.0",
-        "eslint-plugin-vue" : "10.0.0",
+        "eslint-plugin-vue" : "10.2.0",
         "eslint-plugin-n" : "17.18.0",
         "eslint-config-protect-me-from-my-stupidity" : "file:."
     },
