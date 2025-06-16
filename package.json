@@ -50,7 +50,7 @@
         "globals" : "16.2.0",
         "eslint-plugin-promise" : "7.2.1",
         "eslint-plugin-import" : "2.31.0",
-        "@stylistic/eslint-plugin-js" : "4.4.0"
+        "@stylistic/eslint-plugin-js" : "4.4.1"
     },
 
     "peerDependencies" :
