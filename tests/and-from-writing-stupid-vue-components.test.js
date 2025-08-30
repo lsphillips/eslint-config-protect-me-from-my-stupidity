@@ -71,7 +71,7 @@ describe('andFromWritingStupidVueComponents(files)', function ()
 			assertNoUnrecognizedRulesInConfig(config, rules);
 		});
 
-		it('shall disable the @stylistic/js/indent rule', function ()
+		it('shall disable the @stylistic/indent rule', function ()
 		{
 			// Act.
 			const config = resolveConfigForFile(
@@ -79,7 +79,7 @@ describe('andFromWritingStupidVueComponents(files)', function ()
 			);
 
 			// Assert.
-			assert.strictEqual(config.rules['@stylistic/js/indent'], 'off');
+			assert.strictEqual(config.rules['@stylistic/indent'], 'off');
 		});
 	});
 

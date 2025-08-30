@@ -257,7 +257,10 @@ export default function andFromWritingStupidVueComponents (files = [
 				'vue/slot-name-casing'                          : ['error', 'kebab-case'],
 				'vue/no-implicit-coercion'                      : 'error',
 				'vue/no-import-compiler-macros'                 : 'error',
-				'@stylistic/js/indent'                          : 'off'
+				'vue/define-props-destructuring'                : ['error', { 'destructure' : 'never' }],
+				'vue/no-negated-condition'                      : 'error',
+				'vue/no-negated-v-if-condition'                 : 'error',
+				'@stylistic/indent'                             : 'off'
 			}
 		}
 	];

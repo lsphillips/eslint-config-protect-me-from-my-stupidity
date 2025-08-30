@@ -3,7 +3,7 @@ import importPlugin from 'eslint-plugin-import';
 import nodePlugin from 'eslint-plugin-n';
 import promisePlugin from 'eslint-plugin-promise';
 import vuePlugin from 'eslint-plugin-vue';
-import stylisticPlugin from '@stylistic/eslint-plugin-js';
+import stylisticPlugin from '@stylistic/eslint-plugin';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 
@@ -51,5 +51,5 @@ export function getVuePluginRules ()
 
 export function getStylisticRules ()
 {
-	return getPluginRules(stylisticPlugin, '@stylistic/js');
+	return getPluginRules(stylisticPlugin, '@stylistic');
 }

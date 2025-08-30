@@ -61,7 +61,8 @@ export default function andFromWritingStupidNodeApplications (files = [
 				'n/prefer-global/url'                     : 'error',
 				'n/prefer-promises/dns'                   : 'off',
 				'n/prefer-promises/fs'                    : 'off',
-				'n/prefer-node-protocol'                  : 'error'
+				'n/prefer-node-protocol'                  : 'error',
+				'n/no-top-level-await'                    : 'off'
 			}
 		}
 	];
