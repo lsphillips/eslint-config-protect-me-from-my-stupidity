@@ -2,6 +2,24 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/eslint-config-protect-me-from-my-stupidity#semantic-versioning).
 
+## 15.1.0 - 2025-08-30
+
+### Added
+
+- Switched the `no-unassigned-vars` rule on in the base configuration; ensuring that all variables are assigned a value if they are later being read / used.
+- Switched the `@stylistic/curly-newline` rule on in the base configuration; enforcing a curly brace style.
+- Switched the `@stylistic/member-delimiter-style`, `@stylistic/type-annotation-spacing`, `@stylistic/type-generic-spacing` and `@stylistic/type-named-tuple-spacing` rules on in the base configuration; enforcing styling rules around interface definitions and type decorators in TypeScript.
+- Switched the `@stylistic/jsx-child-element-spacing`, `@stylistic/jsx-closing-bracket-location`, `@stylistic/jsx-closing-tag-location`, `@stylistic/jsx-curly-brace-presence`, `@stylistic/jsx-curly-spacing`, `@stylistic/jsx-equals-spacing`, `@stylistic/jsx-first-prop-new-line`, `@stylistic/jsx-function-call-newline`, `@stylistic/jsx-indent-props`, `@stylistic/jsx-pascal-case`, `@stylistic/jsx-props-no-multi-spaces`, `@stylistic/jsx-self-closing-comp` and `@stylistic/jsx-tag-spacing` rules on in the base configuration; enforcing styling rules for JSX.
+- Switched the `vue/define-props-destructuring`, `vue/no-negated-condition` and `vue/no-negated-v-if-condition` rules on in the Vue configuration extension; disallowing destructuring defined props and unnecessary negated conditions.
+- Switched the `import/enforce-node-protocol-usage` rule on in the Node configuration extension; ensuring the `node` protocol is used when importing Node.js builtin modules.
+
+### Changed
+
+- Updated the minimum required `eslint` version to `9.34.0`.
+- Updated the minimum required `eslint-plugin-vue` version to `10.4.0`.
+- Updated the minimum required `eslint-plugin-n` version to `17.21.3`.
+- Replaced `@stylistic/eslint-plugin-js`, as it's now deprecated, with `@stylistic/eslint-plugin`.
+
 ## 15.0.0 - 2025-03-25
 
 ### Changed

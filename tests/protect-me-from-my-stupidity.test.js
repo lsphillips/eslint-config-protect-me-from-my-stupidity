@@ -27,7 +27,7 @@ describe('protectMeFromMyStupidity', function ()
 	{
 		describe(`for .${fileExtension} files`, function ()
 		{
-			it('shall configure all core rules and all the rules of the `import`, `promise` and `@stylistic/js` plugins', async function ()
+			it('shall configure all core rules and all the rules of the `import`, `promise` and `@stylistic` plugins', async function ()
 			{
 				// Setup.
 				const rules = [
