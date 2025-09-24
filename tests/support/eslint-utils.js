@@ -2,7 +2,6 @@ import unsupportedEslintApi from 'eslint/use-at-your-own-risk';
 import importPlugin from 'eslint-plugin-import';
 import nodePlugin from 'eslint-plugin-n';
 import promisePlugin from 'eslint-plugin-promise';
-import vuePlugin from 'eslint-plugin-vue';
 import stylisticPlugin from '@stylistic/eslint-plugin';
 
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - -
@@ -42,11 +41,6 @@ export function getPromisePluginRules ()
 export function getNodePluginRules ()
 {
 	return getPluginRules(nodePlugin, 'n');
-}
-
-export function getVuePluginRules ()
-{
-	return getPluginRules(vuePlugin, 'vue');
 }
 
 export function getStylisticRules ()

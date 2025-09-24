@@ -2,6 +2,22 @@
 
 The format is based on [Keep a Changelog](http://keepachangelog.com/) and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html). You can view the Semantic Versioning policy for this project [here](https://github.com/lsphillips/eslint-config-protect-me-from-my-stupidity#semantic-versioning).
 
+## 16.0.0 - 2025-09-24
+
+### Added
+
+- Switched the `preserve-caught-error` rule on in the base configuration; ensuring that the original error is retained when rethrowing a year.
+
+### Changed
+
+- Updated the minimum required `eslint` version to `9.36.0`.
+- The plugins used in the Node configuration extension (`eslint-plugin-n`) is no longer a peer dependency.
+
+### Removed
+
+- Removed the Vue configuration extension.
+- Removed the configuration for the `@stylistic/jsx-props-no-multi-spaces` rule from the base configuration as it is now deprecated.
+
 ## 15.1.0 - 2025-08-30
 
 ### Added
