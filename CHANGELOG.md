@@ -16,7 +16,7 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/) and this p
 ### Removed
 
 - Removed the Vue configuration extension.
-- Removed the configuration for the `@stylistic/jsx-props-no-multi-spaces` rule from the base configuration as it is now deprecated.
+- Removed the configuration for the `@stylistic/jsx-props-no-multi-spaces` rule from the base configuration as it is deprecated.
 
 ## 15.1.0 - 2025-08-30
 
