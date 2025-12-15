@@ -63,7 +63,7 @@
     {
         "minimatch" : "10.0.3",
         "merge-options" : "3.0.4",
-        "eslint" : "9.36.0",
+        "eslint" : "9.39.2",
         "eslint-config-protect-me-from-my-stupidity" : "file:."
     },
 
